@@ -1,7 +1,14 @@
 {
   "header": {
     "languages": ["PT", "EN"],
-    "navigation": ["Home", "Our Solution", "Differentiators", "How It Works", "Team", "Contact"]
+    "navigation": [
+      { "id": "home", "print": "Home" },
+      { "id": "our-solution", "print": "Our Solution" },
+      { "id": "differentiators", "print": "Differentiators" },
+      { "id": "how-it-works", "print": "How It Works" },
+      { "id": "team", "print": "Team" },
+      { "id": "contact", "print": "Contact" }
+    ]
   },
   "hero": {
     "title": "Customized Rice Biotechnology for Research and Innovation.",

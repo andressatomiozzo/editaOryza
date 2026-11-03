@@ -1,7 +1,14 @@
 {
   "header": {
     "languages": ["PT", "EN"],
-    "navigation": ["Início", "Nossa solução", "Diferenciais", "Como funciona", "Equipe", "Contato"]
+    "navigation": [
+      { "id": "home", "print": "Início" },
+      { "id": "our-solution", "print": "Nossa solução" },
+      { "id": "differentiators", "print": "Diferenciais" },
+      { "id": "how-it-works", "print": "Como funciona" },
+      { "id": "team", "print": "Equipe" },
+      { "id": "contact", "print": "Contato" }
+    ]
   },
   "hero": {
     "title": "Biotecnologia aplicada ao arroz, sob demanda para sua pesquisa e inovação.",
