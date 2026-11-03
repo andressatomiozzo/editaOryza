@@ -64,8 +64,10 @@
   --br-2: 20px;
   --br-3: 30px;
 
-  --ff-eras: "Eras", sans-serif;
-  --ff-century-gothic: "Century Gothic", serif;
+  --container-width: 1370px;
+
+  --ff-eras: "Eras", serif;
+  --ff-century-gothic: "Century Gothic", sans-serif;
 }
 
 * {
@@ -76,7 +78,16 @@
   border: none;
 }
 
-a{
+*:focus{
+  outline: 2px solid var(--color-highlight2);
+  outline-offset: -2px;
+}
+
+body {
+  background-color: var(--color-neutral2);
+}
+
+a {
   text-decoration: none;
   color: var(--color-neutral2);
 }

@@ -7,7 +7,7 @@
   font-size: 1rem;
   font-weight: 700;
   padding: 8px 30px;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   border-radius: var(--br-2);
   --highlight: var(--dynamic-color, var(--color-highlight1));
   cursor: pointer;
@@ -21,14 +21,24 @@
 }
 
 .link2,
+.button2 {
+  color: var(--highlight);
+  background-color: transparent;
+  border: 1px solid var(--highlight);
+}
+
 .link3,
-.button2,
 .button3 {
   color: var(--highlight);
   background-color: transparent;
+  font-weight: 400;
 }
 
-.link2,
-.button2 {
+.link1:hover,
+.button1:hover,
+.link3:hover,
+.button3:hover {
+  color: var(--highlight);
+  background-color: transparent;
   border-color: var(--highlight);
 }
