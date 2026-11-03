@@ -1,16 +1,13 @@
-import React from 'react'
-import "./App.css"
+import "./App.css";
+import { LanguageProvider } from "./hooks/LanguageContext";
+import Header from "./pages/Header";
 
 const App = () => {
   return (
-    <div>
-      <h1>Title</h1>
-      <h3>Title</h3>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima maiores blanditiis natus similique debitis laborum aliquam ad beatae nobis quisquam!</p>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima maiores blanditiis natus similique debitis laborum aliquam ad beatae nobis quisquam!</p>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima maiores blanditiis natus similique debitis laborum aliquam ad beatae nobis quisquam!</p>
-    </div>
-  )
-}
+    <LanguageProvider>
+      <Header />
+    </LanguageProvider>
+  );
+};
 
-export default App
+export default App;

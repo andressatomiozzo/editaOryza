@@ -1,0 +1,172 @@
+{
+  "header": {
+    "languages": ["PT", "EN"],
+    "navigation": ["Início", "Nossa solução", "Diferenciais", "Como funciona", "Equipe", "Contato"]
+  },
+  "hero": {
+    "title": "Biotecnologia aplicada ao arroz, sob demanda para sua pesquisa e inovação.",
+    "subtitle": "Transformação genética, edição gênica e validação molecular para pesquisadores, universidades e empresas.",
+    "cta_buttons": {
+      "start": "Inicie seu projeto",
+      "know": "Conheça os serviços"
+    }
+  },
+  "about": {
+    "challenge": {
+      "title": "O desafio",
+      "description": "O melhoramento genético tradicional pode levar anos. A edição gênica oferece uma alternativa promissora, mas exige infraestrutura especializada, equipe qualificada e protocolos complexos."
+    },
+    "solution": {
+      "title": "Nossa solução",
+      "description": "A EditaOryza oferece serviços de transformação genética, edição gênica e validação molecular de arroz, do desenvolvimento das construções genéticas à obtenção e análise molecular de plantas, sem que o cliente precise investir em infraestrutura própria.",
+      "cta_link": "Conheça como funciona →"
+    },
+    "why_choose_us": {
+      "title": "Por que escolher a EditaOryza?",
+      "subtitle": "Oferecemos uma solução completa e especializada para projetos de transformação genética e edição gênica em arroz, com foco em resultados, qualidade e suporte técnico.",
+      "benefits": [
+        {
+          "title": "Processo Integrado",
+          "description": "Da construção gênica à planta validada, oferecemos suporte técnico nas diferentes etapas do projeto."
+        },
+        {
+          "title": "Menor Investimento",
+          "description": "Acesse infraestrutura e conhecimento especializado sem precisar implantar um laboratório próprio."
+        },
+        {
+          "title": "Biotecnologia Aplicada",
+          "description": "Utilizamos técnicas modernas de engenharia genética para desenvolver soluções alinhadas às necessidades da agricultura do futuro."
+        },
+        {
+          "title": "Especialistas em Arroz",
+          "description": "Infraestrutura e expertise em transformação genética e edição gênica de arroz, com otimização de protocolos adaptados a cultivares brasileiras."
+        },
+        {
+          "title": "Mais Agilidade",
+          "description": "Simplificamos etapas técnicas complexas para facilitar o desenvolvimento de projetos de pesquisa e inovação."
+        },
+        {
+          "title": "Parceria Estratégica",
+          "description": "Colaboramos com pesquisadores, universidades e empresas para gerar soluções biotecnológicas. Somos uma startup incubada na UFRGS, ligada à inovação e pesquisa."
+        }
+      ]
+    }
+  },
+  "how_it_works": {
+    "title": "Como funciona",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Planejamento do Projeto",
+        "description": "Entendemos seus objetivos e definimos e a estratégia biotecnológica mais adequada a cada projeto."
+      },
+      {
+        "step_number": 2,
+        "title": "Construção Gênica",
+        "description": "Recebemos a construção genética fornecida pelo cliente ou desenvolvemos e preparamos construções personalizadas, de acordo com a estratégia e a característica de interesse."
+      },
+      {
+        "step_number": 3,
+        "title": "Transformação Genética",
+        "description": "Introduzimos o material genético nas células de arroz utilizando protocolos e infraestrutura especializados."
+      },
+      {
+        "step_number": 4,
+        "title": "Regeneração das Plantas",
+        "description": "Conduzimos o cultivo e a regeneração das células transformadas para obtenção de plantas."
+      },
+      {
+        "step_number": 5,
+        "title": "Validação Molecular",
+        "description": "Realizamos análises moleculares para confirmar a transformação e edição genética e caracterizar as modificações introduzidas no gene de interesse, verificando os resultados obtidos."
+      },
+      {
+        "step_number": 6,
+        "title": "Entrega do Material Vegetal",
+        "description": "Entregamos sementes T1, para dar continuidade à pesquisa e ao desenvolvimento de soluções para a agricultura."
+      }
+    ],
+    "cta_button": "Vamos conversar sobre seu projeto →"
+  },
+  "team": {
+    "title": "Nossa Equipe",
+    "subtitle": "Ciência, experiência e compromisso para oferecer soluções em transformação genética e edição gênica em arroz.",
+    "members": [
+      {
+        "name": "Isabel Cadavid Sánchez",
+        "role": "CEO e fundadora",
+        "description": [
+          "Engenheira Bióloga, mestre em Biotecnologia e doutora em Biologia Celular e Molecular;",
+          "Especialista em transformação genética e edição gênica de arroz."
+        ]
+      },
+      {
+        "name": "Márcia Pinheiro Margis",
+        "role": "Consultora científica",
+        "description": [
+          "Professora titular do Departamento de Genética da UFRGS;",
+          "Doutora em Biologia Molecular de Plantas;",
+          "Especialista em genética molecular vegetal, transformação genética e edição gênica de arroz."
+        ]
+      },
+      {
+        "name": "Fernando Schäfer Luiz",
+        "role": "Bolsista de iniciação tecnológica",
+        "description": [
+          "Bolsista de Iniciação Tecnológica e Inovação (BITI);",
+          "Graduando em Ciências Biológicas pela UFRGS."
+        ]
+      },
+      {
+        "name": "Isabela Ramos Minuzzi",
+        "role": "Marketing e Comunicação",
+        "description": [
+          "Bolsista de Iniciação Tecnológica e Inovação (BITI);",
+          "Graduanda em Ciências Biológicas pela UFRGS."
+        ]
+      }
+    ]
+  },
+  "institutional_guidelines": {
+    "mission": "Acelerar o desenvolvimento de cultivares de arroz mais adaptadas, eficientes e sustentáveis por meio da transformação e edição gênica, promovendo uma agricultura resiliente e a segurança alimentar.",
+    "vision": "Ser referência em transformação e edição gênica de arroz no Brasil e na América Latina, convertendo ciência e tecnologia em soluções para desenvolver cultivares mais adaptadas, resilientes e sustentáveis.",
+    "values": ["Rigor científico", "Eficiência", "Transparência", "Excelência", "Foco no cliente", "Colaboração"]
+  },
+  "partners": {
+    "title": "Nossos parceiros",
+    "description": "Trabalhamos em colaboração com instituições que impulsionam a ciência, a inovação e o desenvolvimento da agricultura no Brasil."
+  },
+  "contact": {
+    "title": "Vamos conversar sobre seu projeto?",
+    "form": {
+      "title": "Conte-nos sobre seu projeto",
+      "fields": [
+        {
+          "name": "Nome",
+          "placeholder": "Seu nome"
+        },
+        {
+          "name": "Instituição",
+          "placeholder": "Universidade ou empresa"
+        },
+        {
+          "name": "E-mail",
+          "placeholder": "seuemail@exemplo.com"
+        },
+        {
+          "name": "Telefone",
+          "placeholder": "+55 (51) 9 0000-0000"
+        },
+        {
+          "name": "Como podemos ajudar?",
+          "placeholder": "Descreva brevemente seu projeto ou demanda..."
+        }
+      ],
+      "submit_button": "Enviar mensagem →"
+    }
+  },
+  "footer": {
+    "follow": "Siga-nos",
+    "location": "Porto Alegre, RS - Brasil"
+  }
+}

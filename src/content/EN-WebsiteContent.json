@@ -1,0 +1,172 @@
+{
+  "header": {
+    "languages": ["PT", "EN"],
+    "navigation": ["Home", "Our Solution", "Differentiators", "How It Works", "Team", "Contact"]
+  },
+  "hero": {
+    "title": "Customized Rice Biotechnology for Research and Innovation.",
+    "subtitle": "Genetic transformation, gene editing, and molecular validation services for researchers, universities, and companies.",
+    "cta_buttons": {
+      "start": "Start your project",
+      "know": "Explore our services"
+    }
+  },
+  "about": {
+    "challenge": {
+      "title": "The Challenge",
+      "description": "Traditional plant breeding can take years. Gene editing offers a promising alternative, but it requires specialized infrastructure, qualified personnel, and complex protocols."
+    },
+    "solution": {
+      "title": "Our Solution",
+      "description": "EditaOryza provides rice genetic transformation, gene editing, and molecular validation services, from gene construct development to plant generation and molecular analysis, without requiring clients to invest in their own specialized infrastructure.",
+      "cta_link": "Discover How It Works →"
+    },
+    "why_choose_us": {
+      "title": "Why Choose EditaOryza?",
+      "subtitle": "We offer a comprehensive, specialized solution for rice genetic transformation and gene editing projects, focusing on results, quality, and technical support.",
+      "benefits": [
+        {
+          "title": "Integrated Process",
+          "description": "From gene construct development to validated plants, we provide technical support throughout the different stages of each project."
+        },
+        {
+          "title": "Lower Investment",
+          "description": "Access specialized infrastructure and expertise without having to establish your own laboratory."
+        },
+        {
+          "title": "Applied Biotechnology",
+          "description": "We use modern genetic engineering techniques to develop solutions aligned with the needs of future agriculture."
+        },
+        {
+          "title": "Rice Specialists",
+          "description": "Infrastructure and expertise in rice genetic transformation and gene editing, with protocol optimization tailored to Brazilian cultivars."
+        },
+        {
+          "title": "Greater Efficiency",
+          "description": "We simplify complex technical procedures to facilitate research and innovation projects."
+        },
+        {
+          "title": "Strategic Partnership",
+          "description": "We collaborate with researchers, universities, and companies to develop biotechnological solutions. We are a startup incubated at UFRGS, committed to innovation and research."
+        }
+      ]
+    }
+  },
+  "how_it_works": {
+    "title": "How It Works",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Project Planning",
+        "description": "We understand your objectives and define the most appropriate biotechnology strategy for each project."
+      },
+      {
+        "step_number": 2,
+        "title": "Gene Construct Development",
+        "description": "We receive genetic constructs provided by the client or develop and prepare customized constructs according to the selected strategy and target trait."
+      },
+      {
+        "step_number": 3,
+        "title": "Genetic Transformation",
+        "description": "We introduce genetic material into rice cells using specialized protocols and infrastructure."
+      },
+      {
+        "step_number": 4,
+        "title": "Plant Regeneration",
+        "description": "We carry out the culture and regeneration of transformed cells to obtain plants."
+      },
+      {
+        "step_number": 5,
+        "title": "Molecular Validation",
+        "description": "We perform molecular analyses to confirm genetic transformation and editing, characterize the modifications introduced into the target gene, and verify the results obtained."
+      },
+      {
+        "step_number": 6,
+        "title": "Plant Material Delivery",
+        "description": "We deliver T1 seeds to support further research and the development of agricultural solutions."
+      }
+    ],
+    "cta_button": "Let's Discuss Your Project →"
+  },
+  "team": {
+    "title": "Our Team",
+    "subtitle": "Science, expertise, and commitment to delivering solutions in rice genetic transformation and gene editing.",
+    "members": [
+      {
+        "name": "Isabel Cadavid Sánchez",
+        "role": "CEO and Founder",
+        "description": [
+          "Biological Engineer, Master in Biotechnology, and PhD in Cellular and Molecular Biology;",
+          "Specialist in rice genetic transformation and gene editing."
+        ]
+      },
+      {
+        "name": "Márcia Pinheiro Margis",
+        "role": "Scientific Consultant",
+        "description": [
+          "Full Professor at the Department of Genetics at UFRGS;",
+          "PhD in Plant Molecular Biology;",
+          "Specialist in plant molecular genetics, rice genetic transformation, and gene editing."
+        ]
+      },
+      {
+        "name": "Fernando Schäfer Luiz",
+        "role": "Technology Research Fellow",
+        "description": [
+          "Technological Initiation and Innovation Fellow (BITI);",
+          "Undergraduate student in Biological Sciences at UFRGS."
+        ]
+      },
+      {
+        "name": "Isabela Ramos Minuzzi",
+        "role": "Marketing and Communications",
+        "description": [
+          "Technological Initiation and Innovation Fellow (BITI);",
+          "Undergraduate student in Biological Sciences at UFRGS."
+        ]
+      }
+    ]
+  },
+  "institutional_guidelines": {
+    "mission": "To accelerate the development of more adaptable, efficient, and sustainable rice cultivars through genetic transformation and gene editing, promoting resilient agriculture and food security.",
+    "vision": "To become a leading reference in rice genetic transformation and gene editing in Brazil and Latin America, turning science and technology into solutions for developing more adaptable, resilient, and sustainable cultivars.",
+    "values": ["Scientific Rigor", "Efficiency", "Transparency", "Excellence", "Customer Focus", "Collaboration"]
+  },
+  "partners": {
+    "title": "Our Partners",
+    "description": "We collaborate with institutions that drive science, innovation, and agricultural development in Brazil."
+  },
+  "contact": {
+    "title": "Let's Talk About Your Project?",
+    "form": {
+      "title": "Tell us about your project",
+      "fields": [
+        {
+          "name": "Name",
+          "placeholder": "Your name"
+        },
+        {
+          "name": "Institution",
+          "placeholder": "University or Company"
+        },
+        {
+          "name": "E-mail",
+          "placeholder": "yourname@example.com"
+        },
+        {
+          "name": "Phone",
+          "placeholder": "+55 (51) 9 0000-0000"
+        },
+        {
+          "name": "How can we help?",
+          "placeholder": "Briefly describe your project or requirements..."
+        }
+      ],
+      "submit_button": "Send Message →"
+    }
+  },
+  "footer": {
+    "follow": "Follow Us",
+    "location": "Porto Alegre, RS - Brazil"
+  }
+}

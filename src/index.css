@@ -1,4 +1,4 @@
-/* ================================ FONTS ================================ */
+/* ================================ Eras ================================ */
 
 @font-face {
   font-family: "Eras";
@@ -24,6 +24,7 @@
   font-weight: 700;
 }
 
+/* ================================ Century Gothic ================================ */
 @font-face {
   font-family: "Century Gothic";
   src: url("./fonts/century-gothic/century-gothic-bold-italic.otf") format("opentype");
@@ -55,7 +56,7 @@
   --color-white: #fff;
   --color-black: #000;
   --color-neutral1: #fff9f0;
-  --color-neutral1: #f8f0e3;
+  --color-neutral2: #f8f0e3;
   --color-highlight: #b44c00;
   --color-highlight2: #444b04;
 
