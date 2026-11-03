@@ -1,6 +1,6 @@
 import "./App.css";
 import { LanguageProvider } from "./hooks/LanguageContext";
-import Header from "./pages/Header";
+import Header from "./components/Header/Header";
 
 const App = () => {
   return (
