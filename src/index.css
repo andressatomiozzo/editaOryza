@@ -1,0 +1,68 @@
+/* ================================ FONTS ================================ */
+
+@font-face {
+  font-family: "Eras";
+  src: url("./fonts/eras-font/eras-light-5871822a2e706.otf") format("opentype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Eras";
+  src: url("./fonts/eras-font/eras-book-587181c4d21d4.otf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Eras";
+  src: url("./fonts/eras-font/eras-demi-587182767b329.otf") format("opentype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Eras";
+  src: url("./fonts/eras-font/eras-bold-5871825645ec8.otf") format("opentype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Century Gothic";
+  src: url("./fonts/century-gothic/century-gothic-bold-italic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Century Gothic";
+  src: url("./fonts/century-gothic/century-gothic-bold.otf") format("opentype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Century Gothic";
+  src: url("./fonts/century-gothic/century-gothic-italic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Century Gothic";
+  src: url("./fonts/century-gothic/century-gothic.otf") format("opentype");
+  font-weight: 400;
+}
+
+/* ================================ OTHERS ================================ */
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-neutral1: #fff9f0;
+  --color-neutral1: #f8f0e3;
+  --color-highlight: #b44c00;
+  --color-highlight2: #444b04;
+
+  --br-1: 15px;
+  --br-2: 20px;
+  --br-3: 30px;
+
+  --ff-eras: "Eras", sans-serif;
+  --ff-century-gothic: "Century Gothic", serif;
+}
