@@ -4,6 +4,25 @@
 }
 
 .logo {
+  outline: none;
+}
+
+.logo > svg {
   width: 217px;
   height: auto;
+}
+
+.languagesBtns {
+  gap: 10px;
+}
+
+@media (max-width: 84rem) {
+  .logo > svg {
+  width: 150px;
+}
+
+  .linkBtns a,
+  .languagesBtns button {
+    padding: 8px 16px;
+  }
 }

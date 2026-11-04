@@ -11,9 +11,9 @@ const Header = () => {
   return (
     <header className={` ${styles.container}`}>
       <div className={`containerFlex container `}>
-        <a href="#"><Logo className={styles.logo} /></a>
+        <a href="#" className={styles.logo}><Logo /></a>
         <nav>
-          <ul aria-label="Main sections" className={`containerFlex`}>
+          <ul aria-label="Main sections" className={`containerFlex ${styles.linkBtns}`}>
             {t.header.navigation.map((d) => (
               <li key={d.id}>
                 <ButtonLink variant="link3" href={d.id} color="var(--color-highlight2)">
@@ -24,7 +24,7 @@ const Header = () => {
           </ul>
         </nav>
         <nav>
-          <ul aria-label="Languages" className={`containerFlex`}>
+          <ul aria-label="Languages" className={`containerFlex ${styles.languagesBtns}`}>
             <li>
               <Button
                 variant={language === "pt" ? "button1" : "button3"}
