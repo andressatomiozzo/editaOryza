@@ -1,8 +1,8 @@
 import React from "react";
-import { useLanguageContext } from "../../hooks/LanguageContext";
+import { useLanguageContext } from "../../context/LanguageContext";
 import ButtonLink from "../ui/ButtonLink";
 
-import styles from "./Hero.module.css"
+import styles from "./Hero.module.css";
 
 const Hero = () => {
   const { t } = useLanguageContext();

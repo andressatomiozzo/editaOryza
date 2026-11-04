@@ -1,5 +1,5 @@
 import "./App.css";
-import { LanguageProvider } from "./hooks/LanguageContext";
+import { LanguageProvider } from "./context/LanguageContext";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 

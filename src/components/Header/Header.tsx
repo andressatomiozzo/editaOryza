@@ -1,28 +1,39 @@
-import { useLanguageContext } from "../../hooks/LanguageContext";
-
-import Logo from "../../assets/icons/logo01.svg?react";
+import React from "react"
+import { useLanguageContext } from "../../context/LanguageContext";
+import LogoIcon from "../../assets/icons/logo01.svg?react";
+import MenuIcon from "../../assets/icons/menu.svg?react";
 import ButtonLink from "../ui/ButtonLink";
 import Button from "../ui/Button";
 
 import styles from "./Header.module.css";
+import useMedia from "../../hooks/useMedia";
 
 const Header = () => {
   const { t, language, setLanguage } = useLanguageContext();
+  const media64rem = useMedia("(max-width: 64rem)");
+  const [menu, setMenu] = React.useState<boolean>(false)
+
+  console.log(menu);
   return (
     <header className={` ${styles.container}`}>
       <div className={`containerFlex container `}>
-        <a href="#" className={styles.logo}><Logo /></a>
-        <nav>
-          <ul aria-label="Main sections" className={`containerFlex ${styles.linkBtns}`}>
-            {t.header.navigation.map((d) => (
-              <li key={d.id}>
-                <ButtonLink variant="link3" href={d.id} color="var(--color-highlight2)">
-                  {d.print}
-                </ButtonLink>
-              </li>
-            ))}
-          </ul>
-        </nav>
+        <a href="#" className={styles.logo}>
+          <LogoIcon />
+        </a>
+        {media64rem && <MenuIcon onClick={() => setMenu(prev => !prev)}/>}
+        {!media64rem || menu && (
+          <nav className={styles.linkBtnsContainer}>
+            <ul aria-label="Main sections" className={`containerFlex ${styles.linkBtns}`}>
+              {t.header.navigation.map((d) => (
+                <li key={d.id}>
+                  <ButtonLink variant="link3" href={d.id} color="var(--color-highlight2)">
+                    {d.print}
+                  </ButtonLink>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        )}
         <nav>
           <ul aria-label="Languages" className={`containerFlex ${styles.languagesBtns}`}>
             <li>
