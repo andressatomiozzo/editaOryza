@@ -1,6 +1,11 @@
 .container {
   padding: 10px 0px;
   border-bottom: 1px solid var(--color-highlight2);
+  position: relative;
+}
+
+.content > :nth-child(2) {
+  order: 1;
 }
 
 .logo {
@@ -18,11 +23,68 @@
 
 @media (max-width: 84rem) {
   .logo > svg {
-  width: 150px;
-}
+    width: 150px;
+  }
 
   .linkBtns a,
   .languagesBtns button {
     padding: 8px 16px;
   }
+}
+
+@media (max-width: 64rem) {
+  .content > :nth-child(2) {
+    margin-left: auto;
+  }
+
+  .menuIcon {
+    order: 1;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: var(--br-1);
+  }
+
+  .menuIcon:hover {
+    border-color: transparent;
+    background-color: var(--color-neutral1);
+  }
+
+  .linkBtnsContainer {
+    background-color: var(--color-neutral2);
+    position: absolute;
+    top: 70px;
+    right: 0;
+  }
+
+  .linkBtns {
+    flex-direction: column;
+  }
+
+  .linkBtns > li {
+    padding: 0px;
+    width: 100%;
+    display: inline;
+  }
+
+  .linkBtns > li > a {
+    padding: 10px 20px;
+    display: block;
+  }
+
+  .linkBtns > li > a:hover {
+    border-color: transparent;
+    background-color: var(--color-neutral1);
+    border-radius: 0px;
+  }
+}
+
+@media (max-width: 30rem) {
+  .logo > svg {
+  width: 100px;
+  height: auto;
+}
+
+.languagesBtns {
+  gap: 0px;
+}
 }

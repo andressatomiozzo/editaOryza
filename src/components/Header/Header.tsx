@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 import { useLanguageContext } from "../../context/LanguageContext";
 import LogoIcon from "../../assets/icons/logo01.svg?react";
 import MenuIcon from "../../assets/icons/menu.svg?react";
@@ -11,17 +11,51 @@ import useMedia from "../../hooks/useMedia";
 const Header = () => {
   const { t, language, setLanguage } = useLanguageContext();
   const media64rem = useMedia("(max-width: 64rem)");
-  const [menu, setMenu] = React.useState<boolean>(false)
+  const [menu, setMenu] = React.useState<boolean>(false);
 
   console.log(menu);
   return (
-    <header className={` ${styles.container}`}>
-      <div className={`containerFlex container `}>
+    <header className={`${styles.container}`}>
+      <div className={`containerFlex container ${styles.content}`}>
         <a href="#" className={styles.logo}>
           <LogoIcon />
         </a>
-        {media64rem && <MenuIcon onClick={() => setMenu(prev => !prev)}/>}
-        {!media64rem || menu && (
+        <nav>
+          <ul aria-label="Languages" className={`containerFlex ${styles.languagesBtns}`}>
+            <li>
+              <Button
+                variant={language === "pt" ? "button1" : "button3"}
+                color="var(--color-highlight2)"
+                onClick={() => setLanguage("pt")}
+                aria-label="Português"
+              >
+                {t.header.languages[0]}
+              </Button>
+            </li>
+            <li>
+              <Button
+                variant={language === "en" ? "button1" : "button3"}
+                color="var(--color-highlight2)"
+                onClick={() => setLanguage("en")}
+                aria-label="English"
+              >
+                {t.header.languages[1]}
+              </Button>
+            </li>
+          </ul>
+        </nav>
+        {media64rem && (
+          <Button
+            variant="button3"
+            color="var(--color-highlight2"
+            className={styles.menuIcon}
+            onClick={() => setMenu((prev) => !prev)}
+            aria-label="Open/Close button"
+          >
+            <MenuIcon />
+          </Button>
+        )}
+        {(!media64rem || menu) && (
           <nav className={styles.linkBtnsContainer}>
             <ul aria-label="Main sections" className={`containerFlex ${styles.linkBtns}`}>
               {t.header.navigation.map((d) => (
@@ -34,28 +68,6 @@ const Header = () => {
             </ul>
           </nav>
         )}
-        <nav>
-          <ul aria-label="Languages" className={`containerFlex ${styles.languagesBtns}`}>
-            <li>
-              <Button
-                variant={language === "pt" ? "button1" : "button3"}
-                color="var(--color-highlight2)"
-                onClick={() => setLanguage("pt")}
-              >
-                {t.header.languages[0]}
-              </Button>
-            </li>
-            <li>
-              <Button
-                variant={language === "en" ? "button1" : "button3"}
-                color="var(--color-highlight2)"
-                onClick={() => setLanguage("en")}
-              >
-                {t.header.languages[1]}
-              </Button>
-            </li>
-          </ul>
-        </nav>
       </div>
     </header>
   );

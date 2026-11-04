@@ -85,11 +85,6 @@
   border: none;
 }
 
-*:focus {
-  outline: 2px solid var(--color-highlight2);
-  outline-offset: -2px;
-}
-
 body {
   background-color: var(--color-neutral2);
   font-family: var(--ff-century-gothic);
@@ -102,4 +97,15 @@ a {
 
 li {
   list-style: none;
+}
+
+html {
+  font-size: 1rem;
+  @media (max-width: 52rem) {
+    font-size: 95%;
+  }
+
+  @media (max-width: 30rem) {
+    font-size: 85%;
+  }
 }

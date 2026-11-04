@@ -6,9 +6,9 @@ type IButton = PropsWithChildren<ButtonHTMLAttributes<HTMLButtonElement>> & {
   color: string;
 };
 
-const Button = ({ variant, children, color, ...props }: IButton) => {
+const Button = ({ variant, className = "", children, color, ...props }: IButton) => {
   return (
-    <button className={styles[variant]} style={{ "--dynamic-color": color } as React.CSSProperties} {...props}>
+    <button className={`${styles[variant]} ${className}`} style={{ "--dynamic-color": color } as React.CSSProperties} {...props}>
       {children}
     </button>
   );

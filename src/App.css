@@ -10,8 +10,16 @@
   padding: 0px 20px;
 }
 
-.title{
+.title {
   font-family: var(--ff-eras);
   font-weight: 700;
   font-size: 52px;
+
+  @media (max-width: 52rem) {
+    font-size: 40px;
+  }
+
+  @media (max-width: 30rem) {
+    font-size: 25px;
+  }
 }
