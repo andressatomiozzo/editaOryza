@@ -42,3 +42,10 @@
   background-color: transparent;
   border-color: var(--highlight);
 }
+
+.link2:hover,
+.button2:hover {
+  color: var(--color-neutral2);
+  background-color: var(--highlight);
+  border-color: var(--highlight);
+}

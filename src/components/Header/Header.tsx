@@ -8,7 +8,6 @@ import styles from "./Header.module.css";
 
 const Header = () => {
   const { t, language, setLanguage } = useLanguageContext();
-  // console.log(language);
   return (
     <header className={` ${styles.container}`}>
       <div className={`containerFlex container `}>

@@ -11,7 +11,7 @@
     ]
   },
   "hero": {
-    "title": "Biotecnologia aplicada ao arroz, sob demanda para sua pesquisa e inovação.",
+    "title": ["Biotecnologia aplicada ao arroz, ", "sob demanda para sua pesquisa e inovação."],
     "subtitle": "Transformação genética, edição gênica e validação molecular para pesquisadores, universidades e empresas.",
     "cta_buttons": {
       "start": "Inicie seu projeto",
@@ -29,7 +29,7 @@
       "cta_link": "Conheça como funciona →"
     },
     "why_choose_us": {
-      "title": "Por que escolher a EditaOryza?",
+      "title": ["Por que escolher a ", "EditaOryza?"],
       "subtitle": "Oferecemos uma solução completa e especializada para projetos de transformação genética e edição gênica em arroz, com foco em resultados, qualidade e suporte técnico.",
       "benefits": [
         {
@@ -96,7 +96,7 @@
     "cta_button": "Vamos conversar sobre seu projeto →"
   },
   "team": {
-    "title": "Nossa Equipe",
+    "title": ["Nossa ", "Equipe"],
     "subtitle": "Ciência, experiência e compromisso para oferecer soluções em transformação genética e edição gênica em arroz.",
     "members": [
       {
@@ -144,9 +144,8 @@
     "description": "Trabalhamos em colaboração com instituições que impulsionam a ciência, a inovação e o desenvolvimento da agricultura no Brasil."
   },
   "contact": {
-    "title": "Vamos conversar sobre seu projeto?",
+    "title": ["Vamos conversar sobre ", "seu projeto?"],
     "form": {
-      "title": "Conte-nos sobre seu projeto",
       "fields": [
         {
           "name": "Nome",

@@ -11,7 +11,7 @@
     ]
   },
   "hero": {
-    "title": "Customized Rice Biotechnology for Research and Innovation.",
+    "title": ["Customized Rice Biotechnology ", "for Research and Innovation."],
     "subtitle": "Genetic transformation, gene editing, and molecular validation services for researchers, universities, and companies.",
     "cta_buttons": {
       "start": "Start your project",
@@ -29,7 +29,7 @@
       "cta_link": "Discover How It Works →"
     },
     "why_choose_us": {
-      "title": "Why Choose EditaOryza?",
+      "title": ["Why Choose ", "EditaOryza?"],
       "subtitle": "We offer a comprehensive, specialized solution for rice genetic transformation and gene editing projects, focusing on results, quality, and technical support.",
       "benefits": [
         {
@@ -96,7 +96,7 @@
     "cta_button": "Let's Discuss Your Project →"
   },
   "team": {
-    "title": "Our Team",
+    "title": ["Our ", "Team"],
     "subtitle": "Science, expertise, and commitment to delivering solutions in rice genetic transformation and gene editing.",
     "members": [
       {
@@ -144,9 +144,8 @@
     "description": "We collaborate with institutions that drive science, innovation, and agricultural development in Brazil."
   },
   "contact": {
-    "title": "Let's Talk About Your Project?",
+    "title": ["Let's Talk About ", "Your Project?"],
     "form": {
-      "title": "Tell us about your project",
       "fields": [
         {
           "name": "Name",
