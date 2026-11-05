@@ -12,6 +12,7 @@
   }
   @media (max-width: 30rem) {
     align-items: start;
+    margin-top: calc(var(--margin)/2);
   }
 }
 

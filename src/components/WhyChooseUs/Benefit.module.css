@@ -1,0 +1,25 @@
+.listItem {
+  background-color: var(--color-neutral1);
+  border-radius: var(--br-2);
+  width: 100%;
+  height: 100%;
+  padding: 1.25rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.listItem h3 {
+  font-weight: 900;
+  color: var(--color-highlight2);
+  font-size: 1.25rem;
+}
+
+.listItem p {
+  color: var(--color-highlight2);
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+.listItem:hover {
+  border-color: var(--color-highlight2);
+}
