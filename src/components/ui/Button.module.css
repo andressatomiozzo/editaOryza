@@ -23,7 +23,7 @@
 .link2,
 .button2 {
   color: var(--highlight);
-  background-color: transparent;
+  background-color: var(--color-neutral2);
   border: 1px solid var(--highlight);
 }
 
@@ -39,7 +39,7 @@
 .link3:hover,
 .button3:hover {
   color: var(--highlight);
-  background-color: transparent;
+  background-color: var(--color-neutral2);
   border-color: var(--highlight);
 }
 

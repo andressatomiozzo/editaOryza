@@ -1,0 +1,15 @@
+.container {
+  margin-top: var(--margin);
+
+  @media (max-width: 52rem) {
+    margin-top: calc(var(--margin) * 2);
+  }
+
+  @media (max-width: 30rem) {
+    margin-top: calc(var(--margin) * 2.5);
+  }
+
+  @media (max-width: 22rem) {
+    margin-top: calc(var(--margin) * 3);
+  }
+}

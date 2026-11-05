@@ -1,0 +1,67 @@
+.container {
+  background-color: var(--color-highlight2);
+  margin-top: var(--margin);
+  border-radius: var(--br-3);
+  padding: 40px 70px;
+  @media (max-width: 81.25rem) {
+    flex-direction: column;
+    gap: 20px;
+  }
+  @media (max-width: 52rem) {
+    padding: 20px 30px;
+  }
+  @media (max-width: 30rem) {
+    align-items: start;
+  }
+}
+
+.title {
+  color: var(--color-neutral2);
+}
+
+.paragraph {
+  padding-top: 1rem;
+  width: 43rem;
+  position: relative;
+  color: var(--color-neutral2);
+  @media (max-width: 81.25rem) {
+    width: calc(100% - 150px);
+  }
+  @media (max-width: 30rem) {
+    width: 100%;
+  }
+}
+
+.paragraph:after {
+  content: "";
+  position: absolute;
+  right: -180px;
+  bottom: 0px;
+  width: 150px;
+  height: 150px;
+  background-image: url("../../assets/icons/rice.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (max-width: 81.25rem) {
+    right: -150px;
+  }
+  @media (max-width: 52rem) {
+    width: 130px;
+    height: 130px;
+  }
+  @media (max-width: 30rem) {
+    width: 75px;
+    height: 72px;
+    bottom: -75px;
+    right: -30px;
+    border-radius: var(--br-3);
+  }
+  @media (max-width: 22rem) {
+    display: none;
+  }
+}
+
+.container > a {
+  padding: 10px;
+}

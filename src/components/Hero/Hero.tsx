@@ -15,7 +15,7 @@ const Hero = () => {
             <span>{t.hero.title[0]}</span>
             <span>{t.hero.title[1]}</span>
           </h1>
-          <p>{t.hero.subtitle}</p>
+          <p className="paragraph">{t.hero.subtitle}</p>
           <div className={styles.buttons}>
             <ButtonLink variant="link1" href="#" color="var(--color-highlight1)">
               {t.hero.cta_buttons.start}

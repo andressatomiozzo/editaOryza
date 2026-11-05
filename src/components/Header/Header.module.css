@@ -1,6 +1,13 @@
 .container {
   padding: 10px 0px;
   border-bottom: 1px solid var(--color-highlight2);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: var(--color-neutral2);
+}
+
+.content {
   position: relative;
 }
 
@@ -80,11 +87,11 @@
 
 @media (max-width: 30rem) {
   .logo > svg {
-  width: 100px;
-  height: auto;
-}
+    width: 100px;
+    height: auto;
+  }
 
-.languagesBtns {
-  gap: 0px;
-}
+  .languagesBtns {
+    gap: 0px;
+  }
 }

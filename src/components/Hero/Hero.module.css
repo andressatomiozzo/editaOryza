@@ -30,8 +30,6 @@
 
 .content p {
   width: 615px;
-  font-size: 1.25rem;
-  color: var(--color-highlight2);
 }
 
 .buttons {
@@ -63,9 +61,6 @@
   .content h1 span:nth-child(2),
   .content p {
     width: 400px;
-  }
-  .content p {
-    font-size: 1rem;
   }
 }
 
