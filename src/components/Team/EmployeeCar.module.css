@@ -6,6 +6,10 @@
   width: 240px;
   position: relative;
   cursor: pointer;
+
+  @media(max-width:30rem) {
+    width: 200px;
+  }
 }
 
 .containerCard:hover {

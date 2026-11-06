@@ -89,6 +89,8 @@
 body {
   background-color: var(--color-neutral2);
   font-family: var(--ff-century-gothic);
+  overflow-x: hidden;
+
 }
 
 a {

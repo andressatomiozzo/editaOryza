@@ -1,8 +1,9 @@
 .container {
   gap: 2rem;
   margin-top: var(--margin);
+  /* overflow-x: hidden; */
 
-  @media (max-width: 87rem) {
+  @media (max-width: 62rem) {
     flex-direction: column;
   }
 }
@@ -13,6 +14,9 @@
   width: 400px;
   gap: 1rem;
   @media (max-width: 87rem) {
+    width: 80%;
+  }
+  @media (max-width: 62rem) {
     width: 100%;
   }
 }

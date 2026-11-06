@@ -2,9 +2,12 @@ import React from "react";
 import { useLanguageContext } from "../../context/LanguageContext";
 import EmployeeCard from "./EmployeeCard";
 import styles from "./Team.module.css";
+import Carrossel from "../ui/Carrossel";
+import useMedia from "../../hooks/useMedia";
 
 const Team = () => {
   const { t } = useLanguageContext();
+  const media87rem = useMedia("(max-width: 87rem)");
   return (
     <section className={`container containerFlex ${styles.container}`}>
       <div className={styles.titleContainer}>
@@ -14,16 +17,29 @@ const Team = () => {
         </h2>
         <p className={`paragraph ${styles.subtitle}`}>{t.team.subtitle}</p>
       </div>
-      <ul className={styles.cards}>
-        {t.team.members.map((employee) => (
-          <EmployeeCard
-            name={employee.name}
-            role={employee.role}
-            description={employee.description}
-            imageSrc={employee.imageSrc}
-          />
-        ))}
-      </ul>
+      {!media87rem ? (
+        <ul className={styles.cards}>
+          {t.team.members.map((employee) => (
+            <EmployeeCard
+              name={employee.name}
+              role={employee.role}
+              description={employee.description}
+              imageSrc={employee.imageSrc}
+            />
+          ))}
+        </ul>
+      ) : (
+        <Carrossel>
+          {t.team.members.map((employee) => (
+            <EmployeeCard
+              name={employee.name}
+              role={employee.role}
+              description={employee.description}
+              imageSrc={employee.imageSrc}
+            />
+          ))}
+        </Carrossel>
+      )}
     </section>
   );
 };
