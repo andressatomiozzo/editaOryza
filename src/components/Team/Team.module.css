@@ -1,0 +1,36 @@
+.container {
+  gap: 2rem;
+  margin-top: var(--margin);
+
+  @media (max-width: 87rem) {
+    flex-direction: column;
+  }
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  gap: 1rem;
+  @media (max-width: 87rem) {
+    width: 100%;
+  }
+}
+
+.title span:nth-child(1) {
+  color: var(--color-highlight2);
+}
+
+.title span:nth-child(2) {
+  color: var(--color-highlight1);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+
+  @media (max-width: 69rem) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

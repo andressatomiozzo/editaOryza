@@ -105,7 +105,8 @@
         "description": [
           "Engenheira Bióloga, mestre em Biotecnologia e doutora em Biologia Celular e Molecular;",
           "Especialista em transformação genética e edição gênica de arroz."
-        ]
+        ],
+        "imageSrc": "./employees/isabel-cadavid.png"
       },
       {
         "name": "Márcia Pinheiro Margis",
@@ -114,7 +115,8 @@
           "Professora titular do Departamento de Genética da UFRGS;",
           "Doutora em Biologia Molecular de Plantas;",
           "Especialista em genética molecular vegetal, transformação genética e edição gênica de arroz."
-        ]
+        ],
+        "imageSrc": "./employees/marcia-pinheiro.png"
       },
       {
         "name": "Fernando Schäfer Luiz",
@@ -122,7 +124,8 @@
         "description": [
           "Bolsista de Iniciação Tecnológica e Inovação (BITI);",
           "Graduando em Ciências Biológicas pela UFRGS."
-        ]
+        ],
+        "imageSrc": "./employees/fernando-luiz.png"
       },
       {
         "name": "Isabela Ramos Minuzzi",
@@ -130,7 +133,8 @@
         "description": [
           "Bolsista de Iniciação Tecnológica e Inovação (BITI);",
           "Graduanda em Ciências Biológicas pela UFRGS."
-        ]
+        ],
+        "imageSrc": "./employees/isabela-ramos.png"
       }
     ]
   },

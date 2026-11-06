@@ -5,6 +5,7 @@ import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
 import WhyChooseUs from "./components/WhyChooseUs/WhyChooseUs";
 import HowItWorks from "./components/HowItWorks/HowItWorks";
+import Team from "./components/Team/Team";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <About/>
       <WhyChooseUs/>
       <HowItWorks/>
+      <Team/>
     </LanguageProvider>
   );
 };

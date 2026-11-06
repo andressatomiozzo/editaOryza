@@ -105,7 +105,8 @@
         "description": [
           "Biological Engineer, Master in Biotechnology, and PhD in Cellular and Molecular Biology;",
           "Specialist in rice genetic transformation and gene editing."
-        ]
+        ],
+        "imageSrc": "./employees/isabel-cadavid.png"
       },
       {
         "name": "Márcia Pinheiro Margis",
@@ -114,7 +115,8 @@
           "Full Professor at the Department of Genetics at UFRGS;",
           "PhD in Plant Molecular Biology;",
           "Specialist in plant molecular genetics, rice genetic transformation, and gene editing."
-        ]
+        ],
+        "imageSrc": "./employees/marcia-pinheiro.png"
       },
       {
         "name": "Fernando Schäfer Luiz",
@@ -122,7 +124,8 @@
         "description": [
           "Technological Initiation and Innovation Fellow (BITI);",
           "Undergraduate student in Biological Sciences at UFRGS."
-        ]
+        ],
+        "imageSrc": "./employees/fernando-luiz.png"
       },
       {
         "name": "Isabela Ramos Minuzzi",
@@ -130,7 +133,8 @@
         "description": [
           "Technological Initiation and Innovation Fellow (BITI);",
           "Undergraduate student in Biological Sciences at UFRGS."
-        ]
+        ],
+        "imageSrc": "./employees/isabela-ramos.png"
       }
     ]
   },
