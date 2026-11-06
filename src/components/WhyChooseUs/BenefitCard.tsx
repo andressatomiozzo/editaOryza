@@ -1,12 +1,12 @@
 import type { LiHTMLAttributes, PropsWithChildren } from "react";
-import styles from "./Benefit.module.css";
+import styles from "./BenefitCard.module.css";
 
-type Benefit = React.PropsWithChildren<LiHTMLAttributes<HTMLLinkElement>> & {
+type BenefitCard = React.PropsWithChildren<LiHTMLAttributes<HTMLLinkElement>> & {
   title: string;
   description: string;
 };
 
-const Benefit = ({ title, description }: Benefit) => {
+const BenefitCard = ({ title, description }: BenefitCard) => {
   return (
     <li className={styles.listItem}>
       <h3>{title}</h3>
@@ -15,4 +15,4 @@ const Benefit = ({ title, description }: Benefit) => {
   );
 };
 
-export default Benefit;
+export default BenefitCard;

@@ -1,6 +1,6 @@
 import React from "react";
 import { useLanguageContext } from "../../context/LanguageContext";
-import Benefit from "./Benefit";
+import BenefitCard from "./BenefitCard";
 
 import styles from "./WhyChooseUs.module.css";
 
@@ -8,7 +8,7 @@ const WhyChooseUs = () => {
   const { t } = useLanguageContext();
 
   return (
-    <section className={`container ${styles.container}`}>
+    <section className={`container ${styles.bgContainer}`}>
       <div className={`${styles.content}`}>
         <div className={`containerFlex ${styles.text}`}>
           <h2 className={`title ${styles.title}`}>
@@ -19,7 +19,7 @@ const WhyChooseUs = () => {
         </div>
         <ul className={styles.cards}>
           {t.about.why_choose_us.benefits.map((b) => (
-            <Benefit title={b.title} description={b.description} />
+            <BenefitCard title={b.title} description={b.description} />
           ))}
         </ul>
       </div>

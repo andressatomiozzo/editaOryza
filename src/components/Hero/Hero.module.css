@@ -1,4 +1,4 @@
-.container {
+.bgContainer {
   background-image: url("../../assets/images/rice1.png");
   background-repeat: no-repeat;
   background-position: 100%;
@@ -41,12 +41,12 @@
 /* ======================= Media ====================== */
 
 @media (max-width: 52rem) {
-  .container {
+  .bgContainer {
     height: 350px;
     background-size: cover;
   }
 
-  .container > div {
+  .bgContainer > div {
     background-image: linear-gradient(90deg, var(--color-neutral2) 30%, #00000000 60%);
   }
 
@@ -65,7 +65,7 @@
 }
 
 @media (max-width: 30rem) {
-  .container {
+  .bgContainer {
     height: 180px;
     background-size: contain;
   }
@@ -92,7 +92,7 @@
 }
 
 @media (max-width: 22rem) {
-  .container {
+  .bgContainer {
     background-image: none;
   }
 

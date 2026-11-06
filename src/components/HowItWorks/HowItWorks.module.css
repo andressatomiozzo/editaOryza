@@ -1,0 +1,66 @@
+.bgContainer {
+  margin-top: var(--margin);
+  padding: var(--margin) 0;
+  background-image: url("../../assets/prints/print-logo.svg");
+  background-size: 100%;
+  background-position: 10%;
+}
+
+.container {
+  flex-direction: column;
+  gap: var(--margin);
+  @media (max-width: 52rem) {
+    gap: calc(var(--margin) / 2);
+  }
+}
+
+.title {
+  text-align: center;
+  color: var(--color-highlight2);
+}
+
+.stepsList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  position: relative;
+
+  @media (max-width: 62.5rem) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 38rem) {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* .stepsList li:first-child::before,
+.stepsList li:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  left: 15%;
+  width: 70%;
+  height: 3px;
+  background: var(--color-highlight1);
+}
+
+.stepsList li:nth-child(3)::before {
+  top: 15rem;
+} */
+
+.container a {
+  text-align: center;
+}
+
+@media(max-width: 38rem){
+  .stepsList li:first-child::before{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 1.25rem;
+  height: 100%;
+  width:  3px;
+  background: var(--color-highlight1);
+}
+}

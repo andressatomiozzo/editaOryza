@@ -6,7 +6,7 @@ import styles from "./About.module.css"
 
 const About = () => {
   return (
-    <section className={`container ${styles.container}`}>
+    <section className={`container ${styles.bgContainer}`}>
       <Challenge/>
       <Solution/>
     </section>

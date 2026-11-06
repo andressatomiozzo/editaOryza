@@ -1,10 +1,16 @@
-.container {
+.bgContainer {
   /* background-image: url("../../assets/images/Gemini_Generated_Image_gqcygwgqcygwgqcy.jpeg");
   background-color: #F8EDDC;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 100%; */
   margin-top: var(--margin);
+  padding-top: var(--margin);
+
+  @media(max-width: 52rem) {
+  padding-top: 0;
+
+  }
 }
 
 .content {
@@ -21,7 +27,7 @@
 
 .title {
   min-width: 500px;
-  @media (max-width: 1100px) {
+  @media (max-width: 1000px) {
     min-width: 100%;
   }
 }

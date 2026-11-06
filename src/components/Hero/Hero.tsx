@@ -8,7 +8,7 @@ const Hero = () => {
   const { t } = useLanguageContext();
 
   return (
-    <section className={styles.container}>
+    <section className={styles.bgContainer}>
       <div className="container">
         <div className={styles.content}>
           <h1 className="title">
