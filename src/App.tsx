@@ -8,6 +8,7 @@ import HowItWorks from "./components/HowItWorks/HowItWorks";
 import Team from "./components/Team/Team";
 import InstitutionalGuidelines from "./components/InstitutionalGuidelines/InstitutionalGuidelines";
 import Partners from "./components/Partners/Partners";
+import Contact from "./components/Contact/Contact";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <Team/>
       <InstitutionalGuidelines/>
       <Partners/>
+      <Contact/>
     </LanguageProvider>
   );
 };

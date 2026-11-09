@@ -18,7 +18,7 @@ const Carrossel = ({ children, intervalo = 5000 }: ICarrossel) => {
     setCurrentIndex((index + indexTotal) % indexTotal);
   };
 
-  // AUTOPLAY 
+  // AUTOPLAY
   const stopAutoplay = React.useCallback(() => {
     if (autoplayId.current) clearInterval(autoplayId.current);
   }, []);

@@ -12,7 +12,7 @@ const HowItWorks = () => {
         <h2 className={`title ${styles.title}`}>{t.how_it_works.title}</h2>
         <ul className={styles.stepsList}>
           {t.how_it_works.steps.map((step) => (
-            <StepCard number={step.step_number} title={step.title} description={step.description} />
+            <StepCard number={step.step_number} title={step.title} description={step.description} key={step.step_number}/>
           ))}
         </ul>
         <ButtonLink href="#" variant="link1" color="var(--color-highlight1)">

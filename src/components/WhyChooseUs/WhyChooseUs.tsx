@@ -19,7 +19,7 @@ const WhyChooseUs = () => {
         </div>
         <ul className={styles.cards}>
           {t.about.why_choose_us.benefits.map((b) => (
-            <BenefitCard title={b.title} description={b.description} />
+            <BenefitCard title={b.title} description={b.description} key={b.title}/>
           ))}
         </ul>
       </div>

@@ -44,8 +44,8 @@ const Partners = () => {
           <p className={`paragraph ${styles.paragraph}`}>{t.partners.description}</p>
         </div>
         <ul className={styles.liContainer}>
-          {logos.map((logo) => (
-            <li key={logo.description} aria-label={`${logo.description} logo`} className={styles.liContent}>
+          {logos.map((logo, i) => (
+            <li key={logo.description + i} aria-label={`${logo.description} logo`} className={styles.liContent}>
               {logo.icon}
             </li>
           ))}

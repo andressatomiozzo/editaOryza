@@ -12,8 +12,6 @@ const Header = () => {
   const { t, language, setLanguage } = useLanguageContext();
   const media64rem = useMedia("(max-width: 64rem)");
   const [menu, setMenu] = React.useState<boolean>(false);
-
-  console.log(menu);
   return (
     <header className={`${styles.container}`}>
       <div className={`containerFlex container ${styles.content}`}>

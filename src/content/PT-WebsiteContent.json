@@ -152,7 +152,6 @@
       {
         "title": "Valores",
         "description": "Rigor científico, Eficiência, Transparência, Excelência, Foco no cliente, Colaboração"
-        
       }
     ]
   },
@@ -165,23 +164,36 @@
     "form": {
       "fields": [
         {
-          "name": "Nome",
-          "placeholder": "Seu nome"
+          "id": "nome",
+          "label": "Nome",
+          "placeholder": "Seu nome",
+          "type": "text",
+          "required": true
         },
         {
-          "name": "Instituição",
-          "placeholder": "Universidade ou empresa"
+          "id": "institution",
+          "label": "Instituição",
+          "placeholder": "Universidade ou empresa",
+          "type": "text",
+          "required": true
         },
         {
-          "name": "E-mail",
-          "placeholder": "seuemail@exemplo.com"
+          "id": "email",
+          "label": "E-mail",
+          "placeholder": "seuemail@exemplo.com",
+          "type": "email",
+          "required": true
         },
         {
-          "name": "Telefone",
-          "placeholder": "+55 (51) 9 0000-0000"
+          "id": "phone",
+          "label": "Telefone (opcional)",
+          "placeholder": "+55 (51) 9 0000-0000",
+          "type": "tel",
+          "required": false
         },
         {
-          "name": "Como podemos ajudar?",
+          "id": "message",
+          "label": "Como podemos ajudar?",
           "placeholder": "Descreva brevemente seu projeto ou demanda..."
         }
       ],

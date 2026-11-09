@@ -11,7 +11,7 @@ type IEmployeeCard = {
 const EmployeeCard = ({ name, role, description, imageSrc }: IEmployeeCard) => {
   const [openCard, setOpenCard] = React.useState(false);
   return (
-    <li className={styles.containerCard} onClick={() => setOpenCard((prev) => !prev)}>
+    <div className={styles.containerCard} onClick={() => setOpenCard((prev) => !prev)}>
       <h3>{name}</h3>
       <span className={styles.role}>{role}</span>
       <img src={imageSrc} alt={name} />
@@ -22,7 +22,7 @@ const EmployeeCard = ({ name, role, description, imageSrc }: IEmployeeCard) => {
           ))}
         </span>
       )}
-    </li>
+    </div>
   );
 };
 

@@ -1,0 +1,58 @@
+.bgContainer {
+  margin-top: var(--margin);
+  padding: var(--margin);
+  background-image: url("../../assets/prints/print-rice.svg");
+  background-size: cover;
+}
+
+.container {
+  margin-top: 0px;
+  width: 600px;
+}
+
+.title span:nth-child(1) {
+  color: var(--color-highlight2);
+}
+
+.title span:nth-child(2) {
+  color: var(--color-highlight1);
+}
+
+.form {
+  background-color: var(--color-neutral2);
+  border-radius: var(--br-2);
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form label {
+  color: var(--color-highlight2);
+  font-size: 1rem;
+}
+
+.form input,
+.form textarea {
+  font-family: var(--ff-century-gothic);
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  max-width: 100%;
+}
+
+.form textarea {
+  resize: none;
+  height: 10rem;
+}
+
+.form button {
+  padding: 1rem 0px;
+}

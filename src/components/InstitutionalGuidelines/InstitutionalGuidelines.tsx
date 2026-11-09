@@ -9,7 +9,7 @@ const InstitutionalGuidelines = () => {
       <h2 className="read-only">{t.institutional_guidelines.title}</h2>
       <ul className={`containerFlex ${styles.itemContainer}`}>
         {t.institutional_guidelines.description.map((element) => (
-          <li>
+          <li key={element.title}>
             <h3 className={styles.itemTitle}>{element.title}</h3>
             <p className={styles.paragraph}>{element.description}</p>
           </li>

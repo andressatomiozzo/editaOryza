@@ -164,23 +164,36 @@
     "form": {
       "fields": [
         {
-          "name": "Name",
-          "placeholder": "Your name"
+          "id": "name",
+          "label": "Name",
+          "placeholder": "Your name",
+          "type": "text",
+          "required": true
         },
         {
-          "name": "Institution",
-          "placeholder": "University or Company"
+          "id": "institution",
+          "label": "Institution",
+          "placeholder": "University or Company",
+          "type": "text",
+          "required": true
         },
         {
-          "name": "E-mail",
-          "placeholder": "yourname@example.com"
+          "id": "email",
+          "label": "E-mail",
+          "placeholder": "yourname@example.com",
+          "type": "email",
+          "required": true
         },
         {
-          "name": "Phone",
-          "placeholder": "+55 (51) 9 0000-0000"
+          "id": "phone",
+          "label": "Phone (optional)",
+          "placeholder": "+55 (51) 9 0000-0000",
+          "type": "tel",
+          "required": false
         },
         {
-          "name": "How can we help?",
+          "id": "message",
+          "label": "How can we help?",
           "placeholder": "Briefly describe your project or requirements..."
         }
       ],

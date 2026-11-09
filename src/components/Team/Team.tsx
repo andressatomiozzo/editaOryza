@@ -20,12 +20,15 @@ const Team = () => {
       {!media87rem ? (
         <ul className={styles.cards}>
           {t.team.members.map((employee) => (
-            <EmployeeCard
-              name={employee.name}
-              role={employee.role}
-              description={employee.description}
-              imageSrc={employee.imageSrc}
-            />
+            <li key={employee.name}>
+              <EmployeeCard
+                name={employee.name}
+                role={employee.role}
+                description={employee.description}
+                imageSrc={employee.imageSrc}
+                
+              />
+            </li>
           ))}
         </ul>
       ) : (
@@ -36,6 +39,7 @@ const Team = () => {
               role={employee.role}
               description={employee.description}
               imageSrc={employee.imageSrc}
+              key={employee.name}
             />
           ))}
         </Carrossel>
