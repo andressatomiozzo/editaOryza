@@ -164,7 +164,7 @@
     "form": {
       "fields": [
         {
-          "id": "nome",
+          "id": "name",
           "label": "Nome",
           "placeholder": "Seu nome",
           "type": "text",

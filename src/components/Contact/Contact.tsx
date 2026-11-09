@@ -41,8 +41,9 @@ const Contact = () => {
     setFormData({ ...formData, [name]: event.target.value });
   };
 
-  const handleSubmit = async (event: React.SubmitEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: React.SyntheticEvent<HTMLFormElement>) => {
     event.preventDefault();
+    console.log(formData)
     setSendingStatus("sending");
 
     try {
@@ -69,8 +70,8 @@ const Contact = () => {
           <span>{t.contact.title[1]}</span>
         </h2>
 
-        <form action={handleSubmit} className={styles.form}>
-          {inputFields.map((field) => (
+        <form onSubmit={handleSubmit} className={styles.form}>
+          {inputFields.map((field)  => (
             <div key={field.id}>
               <label htmlFor={field.id}>
                 {field.label}
