@@ -1,6 +1,4 @@
 .bgContainer {
-  margin-top: var(--margin);
-
   @media (max-width: 52rem) {
     margin-top: calc(var(--margin) * 2);
   }

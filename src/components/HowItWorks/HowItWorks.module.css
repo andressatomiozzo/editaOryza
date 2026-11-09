@@ -1,5 +1,4 @@
 .bgContainer {
-  margin-top: var(--margin);
   padding: var(--margin) 0;
   background-image: url("../../assets/prints/print-logo.svg");
   background-size: 100%;

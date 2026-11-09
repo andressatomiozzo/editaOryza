@@ -1,6 +1,5 @@
 .container {
   gap: 2rem;
-  margin-top: var(--margin);
   /* overflow-x: hidden; */
 
   @media (max-width: 62rem) {
