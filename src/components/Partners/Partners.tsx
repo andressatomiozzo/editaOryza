@@ -39,8 +39,10 @@ const Partners = () => {
   return (
     <section className={styles.container}>
       <div className="container">
-        <h2 className={`title ${styles.title}`}>{t.partners.title}</h2>
-        <p className={`paragraph ${styles.paragraph}`}>{t.partners.description}</p>
+        <div className={styles.titleContainer}>
+          <h2 className={`title ${styles.title}`}>{t.partners.title}</h2>
+          <p className={`paragraph ${styles.paragraph}`}>{t.partners.description}</p>
+        </div>
         <ul className={styles.liContainer}>
           {logos.map((logo) => (
             <li key={logo.description} aria-label={`${logo.description} logo`} className={styles.liContent}>

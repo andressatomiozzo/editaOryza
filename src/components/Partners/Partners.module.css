@@ -2,9 +2,30 @@
   background-color: var(--color-highlight1);
 }
 
+.container > div {
+  padding: var(--margin) 20px;
+  @media (max-width: 1370px) {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  @media (max-width: 62.5rem) {
+    flex-direction: column;
+  }
+}
+
+.titleContainer {
+  @media (max-width: 1370px) {
+    max-width: 22rem;
+  }
+  @media (max-width: 62.5rem) {
+    max-width: 100%;
+  }
+}
+
 .title {
   color: var(--color-neutral1);
-  padding-top: var(--margin);
 }
 
 .paragraph {
@@ -24,7 +45,7 @@
 
   @media (max-width: 700px) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    margin-top: 0px;
   }
   @media (max-width: 370px) {
     grid-template-columns: repeat(2, 50%);
@@ -44,8 +65,8 @@
   margin: auto;
 
   @media (max-width: 480px) {
-    height: 150px;
-    width: 150px;
+    width: 100%;
+    height: auto;
     padding: 1rem;
     border-radius: var(--br-1);
   }
@@ -58,7 +79,7 @@
 }
 
 .liContent svg {
-  @media (max-width: 370px) {
+  @media (max-width: 480px) {
     width: 100%;
     height: auto;
     aspect-ratio: 1/1;
