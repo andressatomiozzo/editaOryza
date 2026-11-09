@@ -6,6 +6,7 @@ import About from "./components/About/About";
 import WhyChooseUs from "./components/WhyChooseUs/WhyChooseUs";
 import HowItWorks from "./components/HowItWorks/HowItWorks";
 import Team from "./components/Team/Team";
+import InstitutionalGuidelines from "./components/InstitutionalGuidelines/institutionalGuidelines";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <WhyChooseUs/>
       <HowItWorks/>
       <Team/>
+      <InstitutionalGuidelines/>
     </LanguageProvider>
   );
 };

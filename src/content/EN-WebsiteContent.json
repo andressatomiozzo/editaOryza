@@ -139,9 +139,21 @@
     ]
   },
   "institutional_guidelines": {
-    "mission": "To accelerate the development of more adaptable, efficient, and sustainable rice cultivars through genetic transformation and gene editing, promoting resilient agriculture and food security.",
-    "vision": "To become a leading reference in rice genetic transformation and gene editing in Brazil and Latin America, turning science and technology into solutions for developing more adaptable, resilient, and sustainable cultivars.",
-    "values": ["Scientific Rigor", "Efficiency", "Transparency", "Excellence", "Customer Focus", "Collaboration"]
+    "title": "Institutional Guidelines",
+    "description": [
+      {
+        "title": "Mission",
+        "description": "To accelerate the development of more adaptable, efficient, and sustainable rice cultivars through genetic transformation and gene editing, promoting resilient agriculture and food security."
+      },
+      {
+        "title": "Vision",
+        "description": "To become a leading reference in rice genetic transformation and gene editing in Brazil and Latin America, turning science and technology into solutions for developing more adaptable, resilient, and sustainable cultivars."
+      },
+      {
+        "title": "Values",
+        "description": "Scientific Rigor, Efficiency, Transparency, Excellenc, Customer Focus, Collaboration"
+      }
+    ]
   },
   "partners": {
     "title": "Our Partners",

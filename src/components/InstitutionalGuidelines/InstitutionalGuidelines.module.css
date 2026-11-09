@@ -1,0 +1,49 @@
+.container {
+  padding: 2.5rem 3rem;
+  background-color: var(--color-neutral1);
+  border-radius: var(--br-1);
+  border: 3px solid var(--color-highlight2);
+  margin-top: var(--margin);
+  @media (max-width: 1410px) {
+    margin: var(--margin) 20px 0px 20px;
+  }
+}
+
+.itemContainer {
+  gap: 6rem;
+  @media (max-width: 52rem) {
+    flex-direction: column;
+  }
+}
+
+.itemContainer li {
+  position: relative;
+}
+
+.itemContainer li:nth-child(2)::before,
+.itemContainer li:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 3px;
+  background-color: var(--color-highlight2);
+  left: -3rem;
+  @media (max-width: 52rem) {
+    height: 2px;
+    width: 70%;
+    left: 15%;
+    top: -3rem;
+  }
+}
+
+.itemTitle {
+  font-family: var(--ff-eras);
+  font-size: 1.5rem;
+  color: var(--color-highlight2);
+}
+
+.paragraph {
+  padding-top: 0.5rem;
+  font-size: 1rem;
+  color: var(--color-highlight2);
+}

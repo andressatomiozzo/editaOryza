@@ -139,9 +139,22 @@
     ]
   },
   "institutional_guidelines": {
-    "mission": "Acelerar o desenvolvimento de cultivares de arroz mais adaptadas, eficientes e sustentáveis por meio da transformação e edição gênica, promovendo uma agricultura resiliente e a segurança alimentar.",
-    "vision": "Ser referência em transformação e edição gênica de arroz no Brasil e na América Latina, convertendo ciência e tecnologia em soluções para desenvolver cultivares mais adaptadas, resilientes e sustentáveis.",
-    "values": ["Rigor científico", "Eficiência", "Transparência", "Excelência", "Foco no cliente", "Colaboração"]
+    "title": "Diretrizes Institucionais",
+    "description": [
+      {
+        "title": "Missão",
+        "description": "Acelerar o desenvolvimento de cultivares de arroz mais adaptadas, eficientes e sustentáveis por meio da transformação e edição gênica, promovendo uma agricultura resiliente e a segurança alimentar."
+      },
+      {
+        "title": "Visão",
+        "description": "Ser referência em transformação e edição gênica de arroz no Brasil e na América Latina, convertendo ciência e tecnologia em soluções para desenvolver cultivares mais adaptadas, resilientes e sustentáveis."
+      },
+      {
+        "title": "Valores",
+        "description": "Rigor científico, Eficiência, Transparência, Excelência, Foco no cliente, Colaboração"
+        
+      }
+    ]
   },
   "partners": {
     "title": "Nossos parceiros",
