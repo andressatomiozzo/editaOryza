@@ -1,0 +1,144 @@
+.container {
+  flex-wrap: wrap;
+  gap: 10px 40px;
+  margin-bottom: calc(var(--margin) / 2);
+}
+
+.logo svg {
+  max-width: 250px;
+  height: auto;
+}
+
+.contact a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact svg {
+  height: 30px;
+  width: 30px;
+}
+
+.contact span {
+  font-size: 1rem;
+  font-weight: 900;
+  color: var(--color-highlight2);
+}
+
+.socialMedia h3 {
+  font-size: 1.5rem;
+  color: var(--color-highlight2);
+  text-align: center;
+
+  @media (max-width: 52rem) {
+    font-size: 1.25rem;
+  }
+}
+
+.socialMedia ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.socialMedia svg {
+  width: 30px;
+  height: 30px;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+}
+
+.location svg {
+  width: 50px;
+  height: 50px;
+}
+
+.location span {
+  font-size: 1.25rem;
+  max-width: 10rem;
+  color: var(--color-highlight2);
+
+  @media (max-width: 30rem) {
+    font-size: 1rem;
+  }
+}
+
+.contact,
+.socialMedia,
+.location {
+  position: relative;
+  /* margin: auto; */
+}
+
+.contact::before,
+.socialMedia::before,
+.location::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 5rem;
+  background-color: var(--color-highlight2);
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 1000px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .socialMedia::before {
+    display: none;
+  }
+}
+
+@media (max-width: 34rem) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+    margin-top: calc(var(--margin) / 2);
+  }
+
+  .contact::before,
+  .socialMedia::before,
+  .location::before {
+    display: block;
+    width: 40%;
+    height: 1px;
+    left: 50%;
+    top: -20px;
+    transform: translateX(-50%);
+  }
+
+  .logo svg {
+    display: block;
+    margin: auto;
+    width: 150px;
+  }
+
+  .contact a {
+    max-width: 220px;
+    margin: auto;
+  }
+
+  .location svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .location span {
+    max-width: 100%;
+  }
+
+  .location {
+    justify-content: center;
+  }
+}

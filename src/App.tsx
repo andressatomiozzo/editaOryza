@@ -9,6 +9,7 @@ import Team from "./components/Team/Team";
 import InstitutionalGuidelines from "./components/InstitutionalGuidelines/InstitutionalGuidelines";
 import Partners from "./components/Partners/Partners";
 import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
       <InstitutionalGuidelines/>
       <Partners/>
       <Contact/>
+      <Footer/>
     </LanguageProvider>
   );
 };

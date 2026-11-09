@@ -43,7 +43,6 @@ const Contact = () => {
 
   const handleSubmit = async (event: React.SyntheticEvent<HTMLFormElement>) => {
     event.preventDefault();
-    console.log(formData)
     setSendingStatus("sending");
 
     try {
@@ -71,7 +70,7 @@ const Contact = () => {
         </h2>
 
         <form onSubmit={handleSubmit} className={styles.form}>
-          {inputFields.map((field)  => (
+          {inputFields.map((field) => (
             <div key={field.id}>
               <label htmlFor={field.id}>
                 {field.label}
@@ -109,7 +108,7 @@ const Contact = () => {
             type="submit"
             disabled={sendingStatus === "sending"}
           >
-            {t.contact.form.submit_button}
+            {sendingStatus === "sending" ? "..." : t.contact.form.submit_button}
           </Button>
         </form>
       </div>
