@@ -1,7 +1,7 @@
-import React from "react";
-import styles from "./Solution.module.css";
-import { useLanguageContext } from "../../context/LanguageContext";
 import ButtonLink from "../ui/ButtonLink";
+import { useLanguageContext } from "../../context/LanguageContext";
+
+import styles from "./Solution.module.css";
 
 const Solution = () => {
   const { t } = useLanguageContext();

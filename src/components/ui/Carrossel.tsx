@@ -1,6 +1,7 @@
 import React from "react";
-import styles from "./Carrossel.module.css";
 import useMedia from "../../hooks/useMedia";
+
+import styles from "./Carrossel.module.css";
 
 type ICarrossel = React.PropsWithChildren<{
   intervalo?: number; // tempo do autoplay em ms

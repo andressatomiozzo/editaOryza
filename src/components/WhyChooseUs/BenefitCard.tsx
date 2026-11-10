@@ -1,4 +1,5 @@
-import type { LiHTMLAttributes, PropsWithChildren } from "react";
+import type { LiHTMLAttributes } from "react";
+
 import styles from "./BenefitCard.module.css";
 
 type BenefitCard = React.PropsWithChildren<LiHTMLAttributes<HTMLLinkElement>> & {

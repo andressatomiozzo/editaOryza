@@ -1,4 +1,5 @@
 import type { ButtonHTMLAttributes, PropsWithChildren } from "react";
+
 import styles from "./Button.module.css";
 
 type IButton = PropsWithChildren<ButtonHTMLAttributes<HTMLButtonElement>> & {

@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Challenge.module.css";
 import { useLanguageContext } from "../../context/LanguageContext";
 

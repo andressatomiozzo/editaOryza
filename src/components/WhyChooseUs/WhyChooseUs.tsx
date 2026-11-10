@@ -1,6 +1,5 @@
-import React from "react";
-import { useLanguageContext } from "../../context/LanguageContext";
 import BenefitCard from "./BenefitCard";
+import { useLanguageContext } from "../../context/LanguageContext";
 
 import styles from "./WhyChooseUs.module.css";
 

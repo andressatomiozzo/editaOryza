@@ -1,4 +1,4 @@
-import React from "react";
+import { useLanguageContext } from "../../context/LanguageContext";
 
 import LogoIcon from "../../assets/icons/logo01.svg?react";
 import EmailIcon from "../../assets/icons/email.svg?react";
@@ -6,7 +6,6 @@ import WhatsAppIcon from "../../assets/icons/whatsApp.svg?react";
 import LinkedInIcon from "../../assets/icons/linkedIn.svg?react";
 import InstagranIcon from "../../assets/icons/instagran.svg?react";
 import LocalizationIcon from "../../assets/icons/localization.svg?react";
-import { useLanguageContext } from "../../context/LanguageContext";
 
 import styles from "./Footer.module.css";
 
@@ -21,7 +20,7 @@ const Footer = () => {
       <h2 className="read-only">{t.footer.contact}</h2>
       <ul aria-label="contact" className={styles.contact}>
         <li>
-          <a href="mailto:editaoryza@gmail.com" target="_blank" rel="external" aria-label="Top of page">
+          <a href="mailto:editaoryza@gmail.com" target="_blank" rel="external" aria-label="E-mail">
             <EmailIcon />
             <span>editaoryza@gmail.com</span>
           </a>
@@ -31,7 +30,7 @@ const Footer = () => {
             href="https://wa.me/5551995782348?text=Olá!%20Vim%20pelo%20site."
             target="_blank"
             rel="external"
-            aria-label="Top of page"
+            aria-label="WhatsApp"
           >
             <WhatsAppIcon />
             <span>+55 (51) 99578-2348</span>
@@ -60,7 +59,7 @@ const Footer = () => {
         </ul>
       </div>
       <div className={styles.location}>
-        <LocalizationIcon />
+        <LocalizationIcon aria-label="Pin icon"/>
         <span>{t.footer.location}</span>
       </div>
     </footer>

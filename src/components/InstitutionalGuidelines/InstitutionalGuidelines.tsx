@@ -1,9 +1,10 @@
-import React from "react";
 import { useLanguageContext } from "../../context/LanguageContext";
+
 import styles from "./InstitutionalGuidelines.module.css"
 
 const InstitutionalGuidelines = () => {
   const { t } = useLanguageContext();
+  
   return (
     <section className={`container ${styles.container}`}>
       <h2 className="read-only">{t.institutional_guidelines.title}</h2>

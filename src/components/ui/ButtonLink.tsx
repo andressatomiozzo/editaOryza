@@ -1,4 +1,5 @@
 import type { AnchorHTMLAttributes, PropsWithChildren } from "react";
+
 import styles from "./Button.module.css";
 
 type IButtonLink = PropsWithChildren<AnchorHTMLAttributes<HTMLAnchorElement>> & {

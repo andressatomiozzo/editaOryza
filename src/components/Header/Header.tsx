@@ -1,23 +1,27 @@
 import React from "react";
 import { useLanguageContext } from "../../context/LanguageContext";
+import useMedia from "../../hooks/useMedia";
+
 import LogoIcon from "../../assets/icons/logo01.svg?react";
 import MenuIcon from "../../assets/icons/menu.svg?react";
 import ButtonLink from "../ui/ButtonLink";
 import Button from "../ui/Button";
 
 import styles from "./Header.module.css";
-import useMedia from "../../hooks/useMedia";
 
 const Header = () => {
   const { t, language, setLanguage } = useLanguageContext();
+
   const media64rem = useMedia("(max-width: 64rem)");
   const [menu, setMenu] = React.useState<boolean>(false);
+
   return (
     <header className={`${styles.container}`}>
       <div className={`containerFlex container ${styles.content}`}>
         <a href="#" className={styles.logo}>
           <LogoIcon />
         </a>
+
         <nav>
           <ul aria-label="Languages" className={`containerFlex ${styles.languagesBtns}`}>
             <li>
@@ -42,6 +46,7 @@ const Header = () => {
             </li>
           </ul>
         </nav>
+
         {media64rem && (
           <Button
             variant="button3"
@@ -66,6 +71,7 @@ const Header = () => {
             </ul>
           </nav>
         )}
+        
       </div>
     </header>
   );

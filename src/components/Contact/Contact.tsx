@@ -1,9 +1,10 @@
 import React from "react";
-import { useLanguageContext } from "../../context/LanguageContext";
 import Button from "../ui/Button";
+import { useLanguageContext } from "../../context/LanguageContext";
 
 import styles from "./Contact.module.css";
 
+// ======================== TYPES ============================
 type FormKeys = "name" | "institution" | "email" | "phone" | "message";
 
 type FormField = {
@@ -18,6 +19,7 @@ type FormData = Record<FormKeys, string>;
 
 type Status = "idle" | "sending" | "success" | "error";
 
+// ======================== COMPONENT ============================
 const Contact = () => {
   const { t } = useLanguageContext();
   const fields = t.contact.form.fields as FormField[];
@@ -64,6 +66,7 @@ const Contact = () => {
   return (
     <section className={styles.bgContainer}>
       <div className={`container ${styles.container}`}>
+        
         <h2 className={`title ${styles.title}`}>
           <span>{t.contact.title[0]}</span>
           <span>{t.contact.title[1]}</span>

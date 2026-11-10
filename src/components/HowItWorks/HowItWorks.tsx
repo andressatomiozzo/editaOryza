@@ -1,11 +1,12 @@
-import React from "react";
-import styles from "./HowItWorks.module.css";
-import { useLanguageContext } from "../../context/LanguageContext";
 import StepCard from "./StepCard";
 import ButtonLink from "../ui/ButtonLink";
+import { useLanguageContext } from "../../context/LanguageContext";
+
+import styles from "./HowItWorks.module.css";
 
 const HowItWorks = () => {
   const { t } = useLanguageContext();
+  
   return (
     <section className={styles.bgContainer}>
       <div className={`container containerFlex ${styles.container}`}>
