@@ -5,7 +5,7 @@ import styles from "./InstitutionalGuidelines.module.css";
 
 const InstitutionalGuidelines = () => {
   const { t } = useLanguageContext();
-  const { ref, passed } = useScrollY<HTMLElement>(250);
+  const { ref, passed } = useScrollY<HTMLElement>(200);
 
   return (
     <section ref={ref} className={`${passed ? "animeLeft" : ""}  container ${styles.container}`}>

@@ -1,36 +1,36 @@
 import { useLanguageContext } from "../../context/LanguageContext";
 import useScrollY from "../../hooks/useScrollY";
 
-import UFRGSIcon from "../../assets/icons/partners/UFRGS.svg?react";
-import IECBiotIcon from "../../assets/icons/partners/IECBiot.svg?react";
-import FAPERGSIcon from "../../assets/icons/partners/FAPERGS.svg?react";
-import SEBRAEIcon from "../../assets/icons/partners/SEBRAE.svg?react";
+import ufrgsImg from "../../assets/images/partners/UFRGS.png";
+import iceBiotImg from "../../assets/images/partners/IECBiot.png";
+import fapergsImg from "../../assets/images/partners/FAPERGS.png";
+import sebraeImg from "../../assets/images/partners/SEBRAE.png";
 
 import styles from "./Partners.module.css";
 
 const logos = [
   {
-    icon: <UFRGSIcon />,
+    imgUrl: ufrgsImg,
     description: "UFRGS",
   },
   {
-    icon: <IECBiotIcon />,
+    imgUrl: iceBiotImg,
     description: "IECBiot",
   },
   {
-    icon: <FAPERGSIcon />,
+    imgUrl: fapergsImg,
     description: "FAPERGS",
   },
   {
-    icon: <SEBRAEIcon />,
+    imgUrl: sebraeImg,
     description: "SEBRAE",
   },
   {
-    icon: <SEBRAEIcon />,
+    imgUrl: sebraeImg,
     description: "SEBRAE",
   },
   {
-    icon: <SEBRAEIcon />,
+    imgUrl: sebraeImg,
     description: "SEBRAE",
   },
 ];
@@ -50,7 +50,7 @@ const Partners = () => {
         <ul className={styles.liContainer}>
           {logos.map((logo, i) => (
             <li key={logo.description + i} aria-label={`${logo.description} logo`} className={styles.liContent}>
-              {logo.icon}
+              <img src={logo.imgUrl} alt={logo.description} />
             </li>
           ))}
         </ul>

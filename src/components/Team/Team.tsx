@@ -3,17 +3,18 @@ import EmployeeCard from "./EmployeeCard";
 import Carrossel from "../ui/Carrossel";
 import useMedia from "../../hooks/useMedia";
 import { useLanguageContext } from "../../context/LanguageContext";
-import useScrollY from "../../hooks/useScrollY";
+// import useScrollY from "../../hooks/useScrollY";
 
 import styles from "./Team.module.css";
 
 const Team = () => {
   const { t } = useLanguageContext();
   const media87rem = useMedia("(max-width: 87rem)");
-  const { ref, passed } = useScrollY<HTMLDivElement>(250);
+  // const { ref, passed } = useScrollY<HTMLDivElement>(250);
 
   return (
-    <section ref={ref} className={`${passed ? "animeLeft" : ""} container containerFlex ${styles.container}`}>
+    // <section ref={ref} className={`${passed ? "animeLeft" : ""} container containerFlex ${styles.container}`}>
+    <section className={`container containerFlex ${styles.container}`}>
       
       <div className={styles.titleContainer}>
         <h2 className={`title ${styles.title}`}>

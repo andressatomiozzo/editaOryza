@@ -17,7 +17,7 @@ const EmployeeCard = ({ name, role, description, imageSrc }: IEmployeeCard) => {
 
       <h3>{name}</h3>
       <span className={styles.role}>{role}</span>
-      <img src={imageSrc} alt={name} />
+      <img src={imageSrc} alt={name} width={240} height={240} loading="lazy" />
 
       {openCard && (
         <span className={styles.description}>

@@ -6,10 +6,9 @@ import styles from "./Hero.module.css";
 
 const Hero = () => {
   const { t } = useLanguageContext();
-  const { ref, passed } = useScrollY<HTMLElement>(250);
 
   return (
-    <section ref={ref} className={`${passed ? "animeLeft" : ""} ${styles.bgContainer}`}>
+    <section className={`animeLeft ${styles.bgContainer}`}>
       <div className="container">
         <div className={styles.content}>
           <h1 className="title">

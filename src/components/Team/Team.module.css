@@ -1,6 +1,6 @@
 .container {
   gap: 2rem;
-  /* overflow-x: hidden; */
+  opacity: 1;
 
   @media (max-width: 62rem) {
     flex-direction: column;
