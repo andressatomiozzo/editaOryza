@@ -1,4 +1,5 @@
 import { useLanguageContext } from "../../context/LanguageContext";
+import useScrollY from "../../hooks/useScrollY";
 
 import UFRGSIcon from "../../assets/icons/partners/UFRGS.svg?react";
 import IECBiotIcon from "../../assets/icons/partners/IECBiot.svg?react";
@@ -36,11 +37,11 @@ const logos = [
 
 const Partners = () => {
   const { t } = useLanguageContext();
+  const { ref, passed } = useScrollY<HTMLDivElement>(250);
 
   return (
     <section className={styles.container}>
-      <div className="container">
-
+      <div ref={ref} className={`${passed ? "animeLeft" : ""} container`}>
         <div className={styles.titleContainer}>
           <h2 className={`title ${styles.title}`}>{t.partners.title}</h2>
           <p className={`paragraph ${styles.paragraph}`}>{t.partners.description}</p>
@@ -53,7 +54,6 @@ const Partners = () => {
             </li>
           ))}
         </ul>
-        
       </div>
     </section>
   );

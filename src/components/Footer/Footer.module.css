@@ -2,6 +2,7 @@
   flex-wrap: wrap;
   gap: 10px 40px;
   margin-bottom: calc(var(--margin) / 2);
+  opacity: 1;
 }
 
 .logo svg {

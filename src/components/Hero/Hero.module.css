@@ -6,6 +6,7 @@
 }
 
 .bgContainer > div {
+  opacity: 1;
   margin-top: 0px;
 }
 .content {

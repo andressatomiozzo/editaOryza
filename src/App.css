@@ -5,6 +5,7 @@
 }
 
 .container {
+  opacity: 0;
   max-width: var(--container-width);
   margin: var(--margin) auto 0px auto;
   padding: 0px 20px;
@@ -42,6 +43,19 @@
   }
 }
 
-.read-only{
+.read-only {
   display: none;
+}
+
+.animeLeft {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: animeLeft 0.8s forwards;
+}
+
+@keyframes animeLeft {
+  to {
+    opacity: 1;
+    transform: initial;
+  }
 }

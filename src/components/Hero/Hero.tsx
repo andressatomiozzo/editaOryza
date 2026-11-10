@@ -1,13 +1,15 @@
 import { useLanguageContext } from "../../context/LanguageContext";
 import ButtonLink from "../ui/ButtonLink";
+import useScrollY from "../../hooks/useScrollY";
 
 import styles from "./Hero.module.css";
 
 const Hero = () => {
   const { t } = useLanguageContext();
+  const { ref, passed } = useScrollY<HTMLElement>(250);
 
   return (
-    <section className={styles.bgContainer}>
+    <section ref={ref} className={`${passed ? "animeLeft" : ""} ${styles.bgContainer}`}>
       <div className="container">
         <div className={styles.content}>
           <h1 className="title">

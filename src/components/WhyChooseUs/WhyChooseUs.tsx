@@ -1,13 +1,15 @@
 import BenefitCard from "./BenefitCard";
 import { useLanguageContext } from "../../context/LanguageContext";
+import useScrollY from "../../hooks/useScrollY";
 
 import styles from "./WhyChooseUs.module.css";
 
 const WhyChooseUs = () => {
   const { t } = useLanguageContext();
+  const { ref, passed } = useScrollY<HTMLElement>(250);
 
   return (
-    <section className={`container ${styles.bgContainer}`}>
+    <section ref={ref} className={`${passed ? "animeLeft" : ""} container ${styles.bgContainer}`}>
       <div className={`${styles.content}`}>
         <div className={`containerFlex ${styles.text}`}>
           <h2 className={`title ${styles.title}`}>
@@ -18,7 +20,7 @@ const WhyChooseUs = () => {
         </div>
         <ul className={styles.cards}>
           {t.about.why_choose_us.benefits.map((b) => (
-            <BenefitCard title={b.title} description={b.description} key={b.title}/>
+            <BenefitCard title={b.title} description={b.description} key={b.title} />
           ))}
         </ul>
       </div>

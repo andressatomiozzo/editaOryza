@@ -3,6 +3,7 @@ import Button from "../ui/Button";
 import { useLanguageContext } from "../../context/LanguageContext";
 
 import styles from "./Contact.module.css";
+import useScrollY from "../../hooks/useScrollY";
 
 // ======================== TYPES ============================
 type FormKeys = "name" | "institution" | "email" | "phone" | "message";
@@ -21,6 +22,8 @@ type Status = "idle" | "sending" | "success" | "error";
 
 // ======================== COMPONENT ============================
 const Contact = () => {
+  const { ref, passed } = useScrollY<HTMLDivElement>(250);
+
   const { t } = useLanguageContext();
   const fields = t.contact.form.fields as FormField[];
   const inputFields = fields.filter((field) => field.id !== "message");
@@ -65,8 +68,7 @@ const Contact = () => {
 
   return (
     <section className={styles.bgContainer}>
-      <div className={`container ${styles.container}`}>
-        
+      <div ref={ref} className={`${passed ? "animeLeft" : ""} container ${styles.container}`}>
         <h2 className={`title ${styles.title}`}>
           <span>{t.contact.title[0]}</span>
           <span>{t.contact.title[1]}</span>
