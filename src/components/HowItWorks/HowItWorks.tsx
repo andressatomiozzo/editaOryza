@@ -10,7 +10,7 @@ const HowItWorks = () => {
   const { ref, passed } = useScrollY<HTMLDivElement>(250);
 
   return (
-    <section className={styles.bgContainer}>
+    <section id="how-it-works" className={styles.bgContainer}>
       <div ref={ref} className={`${passed ? "animeLeft" : ""} container containerFlex ${styles.container}`}>
         <h2 className={`title ${styles.title}`}>{t.how_it_works.title}</h2>
         <ul className={styles.stepsList}>
@@ -23,7 +23,14 @@ const HowItWorks = () => {
             />
           ))}
         </ul>
-        <ButtonLink href="#" variant="link1" color="var(--color-highlight1)">
+        <ButtonLink
+          href="https://wa.me/5551995782348?text=Olá!%20Vim%20pelo%20site."
+          target="_blank"
+          rel="external"
+          aria-label="WhatsApp"
+          variant="link1"
+          color="var(--color-highlight1)"
+        >
           {t.how_it_works.cta_button}
         </ButtonLink>
       </div>

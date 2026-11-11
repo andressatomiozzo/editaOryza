@@ -14,7 +14,7 @@ const Team = () => {
 
   return (
     // <section ref={ref} className={`${passed ? "animeLeft" : ""} container containerFlex ${styles.container}`}>
-    <section className={`container containerFlex ${styles.container}`}>
+    <section id="team" className={`container containerFlex ${styles.container}`}>
       
       <div className={styles.titleContainer}>
         <h2 className={`title ${styles.title}`}>

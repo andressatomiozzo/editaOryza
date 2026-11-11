@@ -8,7 +8,7 @@ const Hero = () => {
   const { t } = useLanguageContext();
 
   return (
-    <section className={`animeLeft ${styles.bgContainer}`}>
+    <section id="home" className={`animeLeft ${styles.bgContainer}`}>
       <div className="container">
         <div className={styles.content}>
           <h1 className="title">
@@ -16,14 +16,18 @@ const Hero = () => {
             <span>{t.hero.title[1]}</span>
           </h1>
           <p className="paragraph">{t.hero.subtitle}</p>
-          <div className={styles.buttons}>
-            <ButtonLink variant="link1" href="#" color="var(--color-highlight1)">
-              {t.hero.cta_buttons.start}
-            </ButtonLink>
-            <ButtonLink variant="link2" href="#" color="var(--color-highlight2)">
-              {t.hero.cta_buttons.start}
-            </ButtonLink>
-          </div>
+          <ul className={styles.buttons}>
+            <li>
+              <ButtonLink variant="link1" href="#contact" color="var(--color-highlight1)">
+                {t.hero.cta_buttons.start}
+              </ButtonLink>
+            </li>
+            <li>
+              <ButtonLink variant="link2" href="#differentiators" color="var(--color-highlight2)">
+                {t.hero.cta_buttons.know}
+              </ButtonLink>
+            </li>
+          </ul>
         </div>
       </div>
     </section>

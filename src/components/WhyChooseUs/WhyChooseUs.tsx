@@ -9,7 +9,7 @@ const WhyChooseUs = () => {
   const { ref, passed } = useScrollY<HTMLElement>(250);
 
   return (
-    <section ref={ref} className={`${passed ? "animeLeft" : ""} container ${styles.bgContainer}`}>
+    <section id="differentiators" ref={ref} className={`${passed ? "animeLeft" : ""} container ${styles.bgContainer}`}>
       <div className={`${styles.content}`}>
         <div className={`containerFlex ${styles.text}`}>
           <h2 className={`title ${styles.title}`}>

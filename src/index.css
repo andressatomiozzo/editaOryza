@@ -89,6 +89,16 @@
   box-sizing: border-box;
   border: none;
 }
+html {
+  scroll-padding-top: 140px;
+
+  @media (max-width: 1370px) {
+    scroll-padding-top: 110px;
+  }
+  @media (max-width: 30rem) {
+    scroll-padding-top: 90px;
+  }
+}
 
 body {
   background-color: var(--color-neutral2);

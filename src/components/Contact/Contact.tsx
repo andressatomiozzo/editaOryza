@@ -67,7 +67,7 @@ const Contact = () => {
   };
 
   return (
-    <section className={styles.bgContainer}>
+    <section id="contact" className={styles.bgContainer}>
       <div ref={ref} className={`${passed ? "animeLeft" : ""} container ${styles.container}`}>
         <h2 className={`title ${styles.title}`}>
           <span>{t.contact.title[0]}</span>

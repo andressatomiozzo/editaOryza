@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <header className={`${styles.container}`}>
       <div className={`containerFlex container ${styles.content}`}>
-        <a href="#" className={styles.logo}>
+        <a href="#" className={styles.logo} aria-label="Top of page">
           <LogoIcon />
         </a>
 
@@ -63,7 +63,7 @@ const Header = () => {
             <ul aria-label="Main sections" className={`containerFlex ${styles.linkBtns}`}>
               {t.header.navigation.map((d) => (
                 <li key={d.id}>
-                  <ButtonLink variant="link3" href={d.id} color="var(--color-highlight2)">
+                  <ButtonLink variant="link3" href={`#${d.id}`} color="var(--color-highlight2)">
                     {d.print}
                   </ButtonLink>
                 </li>
@@ -71,7 +71,6 @@ const Header = () => {
             </ul>
           </nav>
         )}
-        
       </div>
     </header>
   );

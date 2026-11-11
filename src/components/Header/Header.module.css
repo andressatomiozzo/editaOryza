@@ -96,4 +96,8 @@
   .languagesBtns {
     gap: 0px;
   }
+
+  .linkBtnsContainer {
+    top: 50px;
+  }
 }

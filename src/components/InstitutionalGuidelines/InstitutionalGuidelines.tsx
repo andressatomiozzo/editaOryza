@@ -8,7 +8,7 @@ const InstitutionalGuidelines = () => {
   const { ref, passed } = useScrollY<HTMLElement>(200);
 
   return (
-    <section ref={ref} className={`${passed ? "animeLeft" : ""}  container ${styles.container}`}>
+    <section id="institutional-guidelines" ref={ref} className={`${passed ? "animeLeft" : ""}  container ${styles.container}`}>
       <h2 className="read-only">{t.institutional_guidelines.title}</h2>
       <ul className={`containerFlex ${styles.itemContainer}`}>
         {t.institutional_guidelines.description.map((element) => (

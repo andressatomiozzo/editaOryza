@@ -40,7 +40,7 @@ const Partners = () => {
   const { ref, passed } = useScrollY<HTMLDivElement>(250);
 
   return (
-    <section className={styles.container}>
+    <section id="partners" className={styles.container}>
       <div ref={ref} className={`${passed ? "animeLeft" : ""} container`}>
         <div className={styles.titleContainer}>
           <h2 className={`title ${styles.title}`}>{t.partners.title}</h2>

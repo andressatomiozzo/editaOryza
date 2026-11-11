@@ -12,7 +12,7 @@ const Solution = () => {
         <h2 className={`title2 ${styles.title}`}>{t.about.solution.title}</h2>
         <p className={`paragraph ${styles.paragraph}`}>{t.about.solution.description}</p>
       </div>
-      <ButtonLink variant="link1" href="#" color="var(--color-highlight2)">
+      <ButtonLink variant="link1" href="#how-it-works" color="var(--color-highlight2)">
         {t.about.solution.cta_link}
       </ButtonLink>
     </div>
