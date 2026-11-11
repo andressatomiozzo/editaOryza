@@ -4,6 +4,7 @@ import { useLanguageContext } from "../../context/LanguageContext";
 
 import styles from "./Contact.module.css";
 import useScrollY from "../../hooks/useScrollY";
+import WhatsAppButton from "../ui/WhatsAppButton";
 
 // ======================== TYPES ============================
 type FormKeys = "name" | "institution" | "email" | "phone" | "message";
@@ -20,8 +21,12 @@ type FormData = Record<FormKeys, string>;
 
 type Status = "idle" | "sending" | "success" | "error";
 
+type WhatsAppButtonProps = {
+  footerRef: React.RefObject<HTMLElement | null>;
+};
+
 // ======================== COMPONENT ============================
-const Contact = () => {
+const Contact = ({footerRef}: WhatsAppButtonProps) => {
   const { ref, passed } = useScrollY<HTMLDivElement>(250);
 
   const { t } = useLanguageContext();
@@ -117,6 +122,8 @@ const Contact = () => {
           </Button>
         </form>
       </div>
+
+      <WhatsAppButton footerRef={footerRef}/>
     </section>
   );
 };

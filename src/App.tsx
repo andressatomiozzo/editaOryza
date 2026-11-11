@@ -1,4 +1,5 @@
 import "./App.css";
+import React from "react";
 import { LanguageProvider } from "./context/LanguageContext";
 
 import Header from "./components/Header/Header";
@@ -13,6 +14,8 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 
 const App = () => {
+  const footerRef = React.useRef<HTMLElement>(null);
+  
   return (
     <LanguageProvider>
       <Header />
@@ -24,9 +27,9 @@ const App = () => {
         <Team/>
         <InstitutionalGuidelines/>
         <Partners/>
-        <Contact/>
+        <Contact footerRef={footerRef}/>
       </main>
-      <Footer/>
+      <Footer footerRef={footerRef}/>
     </LanguageProvider>
   );
 };

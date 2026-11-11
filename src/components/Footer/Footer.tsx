@@ -9,10 +9,15 @@ import LocalizationIcon from "../../assets/icons/localization.svg?react";
 
 import styles from "./Footer.module.css";
 
-const Footer = () => {
+type FooterProps = {
+  footerRef: React.RefObject<HTMLElement | null>;
+};
+
+const Footer = ({ footerRef }: FooterProps) => {
   const { t } = useLanguageContext();
+
   return (
-    <footer className={`container containerFlex ${styles.container}`}>
+    <footer ref={footerRef} className={`container containerFlex ${styles.container}`}>
       <a href="#" aria-label="Top of page" className={styles.logo}>
         <LogoIcon />
       </a>

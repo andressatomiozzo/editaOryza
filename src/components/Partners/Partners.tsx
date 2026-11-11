@@ -5,6 +5,7 @@ import ufrgsImg from "../../assets/images/partners/UFRGS.png";
 import iceBiotImg from "../../assets/images/partners/IECBiot.png";
 import fapergsImg from "../../assets/images/partners/FAPERGS.png";
 import sebraeImg from "../../assets/images/partners/SEBRAE.png";
+import parqueUFRGSImg from "../../assets/images/partners/parqueUFRGS.png";
 
 import styles from "./Partners.module.css";
 
@@ -26,8 +27,8 @@ const logos = [
     description: "SEBRAE",
   },
   {
-    imgUrl: sebraeImg,
-    description: "SEBRAE",
+    imgUrl: parqueUFRGSImg,
+    description: "Parque UFRGS",
   },
   {
     imgUrl: sebraeImg,
