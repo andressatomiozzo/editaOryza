@@ -8,12 +8,16 @@ import ButtonLink from "../ui/ButtonLink";
 import Button from "../ui/Button";
 
 import styles from "./Header.module.css";
+import { useActiveSection } from "../../hooks/useActiveSection";
 
 const Header = () => {
   const { t, language, setLanguage } = useLanguageContext();
 
   const media64rem = useMedia("(max-width: 64rem)");
   const [menu, setMenu] = React.useState<boolean>(false);
+
+  const ids = t.header.navigation.map((item) => item.id);
+  const active = useActiveSection(ids);
 
   return (
     <header className={`${styles.container}`}>
@@ -63,7 +67,12 @@ const Header = () => {
             <ul aria-label="Main sections" className={`containerFlex ${styles.linkBtns}`}>
               {t.header.navigation.map((d) => (
                 <li key={d.id}>
-                  <ButtonLink variant="link3" href={`#${d.id}`} color="var(--color-highlight2)">
+                  <ButtonLink
+                    variant={active === d.id ? "link1" : "link3"}
+                    href={`#${d.id}`}
+                    color="var(--color-highlight2)"
+                    aria-current={active === d.id ? "true" : undefined}
+                  >
                     {d.print}
                   </ButtonLink>
                 </li>
