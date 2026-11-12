@@ -1,7 +1,10 @@
 import React from "react";
+import useMedia from "./useMedia";
 
-export const useActiveSection = (ids: string[]) =>  {
+export const useActiveSection = (ids: string[]) => {
   const [active, setActive] = React.useState<string>(ids[0] ?? "");
+
+  const media52rem = useMedia("(max-width: 52rem)");
 
   React.useEffect(() => {
     const observer = new IntersectionObserver(
@@ -12,7 +15,7 @@ export const useActiveSection = (ids: string[]) =>  {
           }
         });
       },
-      { rootMargin: "0% 0px -80% 0px" }
+      { rootMargin: media52rem ? "-0px 0px -80% 0px" : "50% 0px -80% 0px" },
     );
 
     ids.forEach((id) => {
@@ -21,7 +24,7 @@ export const useActiveSection = (ids: string[]) =>  {
     });
 
     return () => observer.disconnect();
-  }, [ids]);
+  }, [ids, media52rem]);
 
   return active;
-}
+};

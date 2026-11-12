@@ -89,9 +89,11 @@
   box-sizing: border-box;
   border: none;
 }
+
 html {
   scroll-padding-top: 140px;
-
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-highlight2) var(--color-neutral1);
   @media (max-width: 1370px) {
     scroll-padding-top: 110px;
   }
@@ -103,7 +105,8 @@ html {
 body {
   background-color: var(--color-neutral2);
   font-family: var(--ff-century-gothic);
-  overflow-x: hidden;
+  overflow-x: clip;
+  touch-action: pan-y;
 }
 
 a {
