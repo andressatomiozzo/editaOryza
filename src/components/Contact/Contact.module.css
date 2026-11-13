@@ -63,3 +63,11 @@
 .form button {
   padding: 1rem 0px;
 }
+
+.successMessage {
+  color: var(--color-highlight2);
+} 
+
+.errorMessage{
+  color: var(--color-highlight1);
+}

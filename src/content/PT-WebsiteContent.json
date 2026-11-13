@@ -197,7 +197,9 @@
           "placeholder": "Descreva brevemente seu projeto ou demanda..."
         }
       ],
-      "submit_button": "Enviar mensagem →"
+      "submit_button": "Enviar mensagem →",
+      "success_message": "Mensagem enviada com sucesso!",
+      "error_message": "Erro ao enviar mensagem. Tente novamente."
     }
   },
   "footer": {

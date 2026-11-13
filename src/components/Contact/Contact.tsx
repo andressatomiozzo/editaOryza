@@ -26,7 +26,7 @@ type WhatsAppButtonProps = {
 };
 
 // ======================== COMPONENT ============================
-const Contact = ({footerRef}: WhatsAppButtonProps) => {
+const Contact = ({ footerRef }: WhatsAppButtonProps) => {
   const { ref, passed } = useScrollY<HTMLDivElement>(250);
 
   const { t } = useLanguageContext();
@@ -55,14 +55,29 @@ const Contact = ({footerRef}: WhatsAppButtonProps) => {
     event.preventDefault();
     setSendingStatus("sending");
 
+    const payload = {
+      access_key: "625bd747-3b7b-44de-8c90-30b2dae96fe9",
+      subject: `Novo contato no site - ${formData.name}`,
+      name: formData.name,
+      institution: formData.institution,
+      email: formData.email,
+      phone: formData.phone,
+      message: formData.message,
+    };
+
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_URL}/contato`, {
+      const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify(payload),
       });
 
-      if (!response.ok) throw new Error();
+      const result = await response.json();
+
+      if (!response.ok || !result.success) {
+        console.error("Erro Web3Forms:", result);
+        throw new Error(result.message);
+      }
 
       setSendingStatus("success");
       setFormData({ name: "", institution: "", email: "", phone: "", message: "" });
@@ -120,10 +135,22 @@ const Contact = ({footerRef}: WhatsAppButtonProps) => {
           >
             {sendingStatus === "sending" ? "..." : t.contact.form.submit_button}
           </Button>
+
+          {sendingStatus === "success" && (
+            <p role="status" className={styles.successMessage}>
+              {t.contact.form.success_message}
+            </p>
+          )}
+
+          {sendingStatus === "error" && (
+            <p role="alert" className={styles.errorMessage}>
+              {t.contact.form.error_message}
+            </p>
+          )}
         </form>
       </div>
 
-      <WhatsAppButton footerRef={footerRef}/>
+      <WhatsAppButton footerRef={footerRef} />
     </section>
   );
 };

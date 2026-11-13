@@ -197,7 +197,9 @@
           "placeholder": "Briefly describe your project or requirements..."
         }
       ],
-      "submit_button": "Send Message →"
+      "submit_button": "Send Message →",
+      "success_message": "Message sent successfully!",
+      "error_message": "Error sending message. Please try again."
     }
   },
   "footer": {
