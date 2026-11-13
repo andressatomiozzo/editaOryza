@@ -1,30 +1,37 @@
 import React from "react";
-import useMedia from "./useMedia";
 
 export const useActiveSection = (ids: string[]) => {
   const [active, setActive] = React.useState<string>(ids[0] ?? "");
 
-  const media52rem = useMedia("(max-width: 52rem)");
-
   React.useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entradas) => {
-        entradas.forEach((entrada) => {
-          if (entrada.isIntersecting) {
-            setActive(entrada.target.id);
-          }
-        });
-      },
-      { rootMargin: media52rem ? "-0px 0px -80% 0px" : "50% 0px -80% 0px" },
-    );
+    const update = () => {
+      const linha = window.innerHeight * 0.5;
+      let atual = ids[0] ?? "";
 
-    ids.forEach((id) => {
-      const element = document.getElementById(id);
-      if (element) observer.observe(element);
-    });
+      for (const id of ids) {
+        const element = document.getElementById(id);
+        if (element && element.getBoundingClientRect().top <= linha) {
+          atual = id;
+        }
+      }
 
-    return () => observer.disconnect();
-  }, [ids, media52rem]);
+      // no fim da página, a última seção pode nunca chegar na linha
+      const chegouNoFim =
+        window.innerHeight + window.scrollY >= document.body.offsetHeight - 2;
+      if (chegouNoFim) atual = ids[ids.length - 1] ?? atual;
+
+      setActive(atual);
+    };
+
+    update();
+    window.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update);
+
+    return () => {
+      window.removeEventListener("scroll", update);
+      window.removeEventListener("resize", update);
+    };
+  }, [ids]);
 
   return active;
 };
