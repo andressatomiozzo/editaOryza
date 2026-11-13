@@ -22,32 +22,18 @@ const Team = () => {
         <p className={`paragraph ${styles.subtitle}`}>{t.team.subtitle}</p>
       </div>
 
-      {!media87rem ? (
-        <ul className={styles.cards}>
-          {t.team.members.map((employee) => (
-            <li key={employee.name}>
-              <EmployeeCard
-                name={employee.name}
-                role={employee.role}
-                description={employee.description}
-                imageSrc={employee.imageSrc}
-              />
-            </li>
-          ))}
-        </ul>
-      ) : (
-        <Carrossel>
-          {t.team.members.map((employee) => (
+      <ul className={styles.cards}>
+        {t.team.members.map((employee) => (
+          <li key={employee.name}>
             <EmployeeCard
               name={employee.name}
               role={employee.role}
               description={employee.description}
               imageSrc={employee.imageSrc}
-              key={employee.name}
             />
-          ))}
-        </Carrossel>
-      )}
+          </li>
+        ))}
+      </ul>
     </section>
   );
 };

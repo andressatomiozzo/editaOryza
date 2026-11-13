@@ -8,6 +8,7 @@ import About from "./components/About/About";
 import WhyChooseUs from "./components/WhyChooseUs/WhyChooseUs";
 import HowItWorks from "./components/HowItWorks/HowItWorks";
 import Team from "./components/Team/Team";
+import TeamCarrossel from "./components/TeamCarrossel/TeamCarrossel";
 import InstitutionalGuidelines from "./components/InstitutionalGuidelines/InstitutionalGuidelines";
 import Partners from "./components/Partners/Partners";
 import Contact from "./components/Contact/Contact";
@@ -25,6 +26,7 @@ const App = () => {
         <WhyChooseUs/>
         <HowItWorks/>
         <Team/>
+        <TeamCarrossel/>
         <InstitutionalGuidelines/>
         <Partners/>
         <Contact footerRef={footerRef}/>

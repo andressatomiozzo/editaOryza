@@ -1,0 +1,55 @@
+import EmployeeCardCarrossel from "./EmployeeCardCarrossel";
+import Carrossel from "../ui/Carrossel";
+import useMedia from "../../hooks/useMedia";
+import { useLanguageContext } from "../../context/LanguageContext";
+// import useScrollY from "../../hooks/useScrollY";
+
+import styles from "./TeamCarrossel.module.css";
+
+const TeamCarrossel = () => {
+  const { t } = useLanguageContext();
+  const media87rem = useMedia("(max-width: 87rem)");
+  // const { ref, passed } = useScrollY<HTMLDivElement>(250);
+
+  return (
+    // <section ref={ref} className={`${passed ? "animeLeft" : ""} container containerFlex ${styles.container}`}>
+    <section id="team" className={`container containerFlex ${styles.container}`}>
+      <div className={styles.titleContainer}>
+        <h2 className={`title ${styles.title}`}>
+          <span>{t.team.title[0]}</span>
+          <span>{t.team.title[1]}</span>
+        </h2>
+        <p className={`paragraph ${styles.subtitle}`}>{t.team.subtitle}</p>
+      </div>
+
+      {!media87rem ? (
+        <ul className={styles.cards}>
+          {t.team.members.map((employee) => (
+            <li key={employee.name}>
+              <EmployeeCardCarrossel
+                name={employee.name}
+                role={employee.role}
+                description={employee.description}
+                imageSrc={employee.imageSrc}
+              />
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <Carrossel>
+          {t.team.members.map((employee) => (
+            <EmployeeCardCarrossel
+              name={employee.name}
+              role={employee.role}
+              description={employee.description}
+              imageSrc={employee.imageSrc}
+              key={employee.name}
+            />
+          ))}
+        </Carrossel>
+      )}
+    </section>
+  );
+};
+
+export default TeamCarrossel;
