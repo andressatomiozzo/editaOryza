@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "./EmployeeCar.module.css";
+import styles from "./EmployeeCard.module.css";
 
 type IEmployeeCard = {
   name: string;

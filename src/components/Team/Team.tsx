@@ -1,4 +1,3 @@
-
 import EmployeeCard from "./EmployeeCard";
 import Carrossel from "../ui/Carrossel";
 import useMedia from "../../hooks/useMedia";
@@ -15,7 +14,6 @@ const Team = () => {
   return (
     // <section ref={ref} className={`${passed ? "animeLeft" : ""} container containerFlex ${styles.container}`}>
     <section id="team" className={`container containerFlex ${styles.container}`}>
-      
       <div className={styles.titleContainer}>
         <h2 className={`title ${styles.title}`}>
           <span>{t.team.title[0]}</span>
@@ -33,7 +31,6 @@ const Team = () => {
                 role={employee.role}
                 description={employee.description}
                 imageSrc={employee.imageSrc}
-                
               />
             </li>
           ))}
@@ -51,7 +48,6 @@ const Team = () => {
           ))}
         </Carrossel>
       )}
-
     </section>
   );
 };
