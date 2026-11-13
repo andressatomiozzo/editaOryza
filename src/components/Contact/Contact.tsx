@@ -56,7 +56,7 @@ const Contact = ({ footerRef }: WhatsAppButtonProps) => {
     setSendingStatus("sending");
 
     const payload = {
-      access_key: "625bd747-3b7b-44de-8c90-30b2dae96fe9",
+      access_key: "1abc2f2e-a6e5-4240-b7dd-20effa7c5ddb",
       subject: `Novo contato no site - ${formData.name}`,
       name: formData.name,
       institution: formData.institution,
