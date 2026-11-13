@@ -32,13 +32,13 @@ const Footer = ({ footerRef }: FooterProps) => {
         </li>
         <li>
           <a
-            href="https://wa.me/5551995782348?text=Olá!%20Vim%20pelo%20site."
+            href="https://wa.me/5551995489075?text=Olá!%20Vim%20pelo%20site."
             target="_blank"
             rel="external"
             aria-label="WhatsApp"
           >
             <WhatsAppIcon />
-            <span>+55 (51) 99578-2348</span>
+            <span>+55 (51) 99548-9075</span>
           </a>
         </li>
       </ul>
@@ -64,7 +64,7 @@ const Footer = ({ footerRef }: FooterProps) => {
         </ul>
       </div>
       <div className={styles.location}>
-        <LocalizationIcon aria-label="Pin icon"/>
+        <LocalizationIcon aria-label="Pin icon" />
         <span>{t.footer.location}</span>
       </div>
     </footer>

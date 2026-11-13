@@ -44,11 +44,7 @@
   }
 
   @media (max-width: 700px) {
-    grid-template-columns: repeat(2, 1fr);
     margin-top: 0px;
-  }
-  @media (max-width: 370px) {
-    grid-template-columns: repeat(2, 50%);
     gap: 10px;
   }
 }
@@ -64,7 +60,7 @@
   width: 200px;
   margin: auto;
 
-  @media (max-width: 480px) {
+  @media (max-width: 675px) {
     width: 100%;
     height: auto;
     aspect-ratio: 1 / 1;
@@ -78,13 +74,13 @@
 }
 
 .liContent img {
-    max-width: 120%;
+  max-width: 120%;
 
-  @media (max-width: 480px) {
+  @media (max-width: 700px) {
     max-width: 100%;
     max-height: 100%;
     width: auto;
     height: auto;
-    object-fit: contain
+    object-fit: contain;
   }
 }

@@ -106,7 +106,8 @@
           "Biological Engineer, Master in Biotechnology, and PhD in Cellular and Molecular Biology;",
           "Specialist in rice genetic transformation and gene editing."
         ],
-        "imageSrc": "/images/employees/isabel-cadavid.webp"
+        "imageSrc": "/images/employees/isabel-cadavid.webp",
+        "short_bio": "Short bio"
       },
       {
         "name": "Márcia Pinheiro Margis",
@@ -116,7 +117,8 @@
           "PhD in Plant Molecular Biology;",
           "Specialist in plant molecular genetics, rice genetic transformation, and gene editing."
         ],
-        "imageSrc": "/images/employees/marcia-pinheiro.webp"
+        "imageSrc": "/images/employees/marcia-pinheiro.webp",
+        "short_bio": "Short bio"
       },
       {
         "name": "Fernando Schäfer Luiz",
@@ -125,7 +127,8 @@
           "Technological Initiation and Innovation Fellow (BITI);",
           "Undergraduate student in Biological Sciences at UFRGS."
         ],
-        "imageSrc": "/images/employees/fernando-luiz.webp"
+        "imageSrc": "/images/employees/fernando-luiz.webp",
+        "short_bio": "Short bio"
       },
       {
         "name": "Isabela Ramos Minuzzi",
@@ -134,7 +137,8 @@
           "Technological Initiation and Innovation Fellow (BITI);",
           "Undergraduate student in Biological Sciences at UFRGS."
         ],
-        "imageSrc": "/images/employees/isabela-ramos.webp"
+        "imageSrc": "/images/employees/isabela-ramos.webp",
+        "short_bio": "Short bio"
       }
     ]
   },

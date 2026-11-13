@@ -30,6 +30,7 @@ const Team = () => {
               role={employee.role}
               description={employee.description}
               imageSrc={employee.imageSrc}
+              shortBio={employee.short_bio}
             />
           </li>
         ))}

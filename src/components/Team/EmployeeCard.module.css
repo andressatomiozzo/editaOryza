@@ -4,12 +4,7 @@
   display: flex;
   flex-direction: column;
   width: 240px;
-  position: relative;
   cursor: pointer;
-
-  @media (max-width: 550px) {
-    width: 100%;
-  }
 }
 
 .containerCard:hover {
@@ -19,6 +14,8 @@
 .containerCard img {
   order: -1;
   margin: auto;
+  width: 100%;
+  height: auto;
 }
 
 .containerCard h3 {
@@ -33,7 +30,8 @@
   }
 }
 
-.role {
+.role,
+.shortBio {
   font-size: 1.2rem;
   font-weight: 900;
   padding: 20px;
@@ -54,7 +52,12 @@
   left: 20px;
 }
 
-.description {
+.shortBio {
+  padding-top: 0px;
+  font-size: 0.8rem;
+}
+
+/* .description {
   position: absolute;
   top: calc(100% - 10px);
   left: 0;
@@ -65,5 +68,14 @@
   padding: 10px 20px;
   border-radius: 0px 0px var(--br-1) var(--br-1);
   z-index: 2;
+  box-shadow: 0px 10px 10px #b44b0028;
+} */
+
+.description {
+  width: 100%;
+  font-size: 1rem;
+  color: var(--color-highlight2);
+  padding: 10px 20px;
+  border-radius: 0px 0px var(--br-1) var(--br-1);
   box-shadow: 0px 10px 10px #b44b0028;
 }

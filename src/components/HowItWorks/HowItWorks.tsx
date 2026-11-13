@@ -24,7 +24,7 @@ const HowItWorks = () => {
           ))}
         </ul>
         <ButtonLink
-          href="https://wa.me/5551995782348?text=Olá!%20Vim%20pelo%20site."
+          href="https://wa.me/5551995489075?text=Olá!%20Vim%20pelo%20site."
           target="_blank"
           rel="external"
           aria-label="WhatsApp"

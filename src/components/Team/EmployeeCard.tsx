@@ -7,9 +7,10 @@ type IEmployeeCard = {
   role: string;
   description: string[];
   imageSrc: string;
+  shortBio: string
 };
 
-const EmployeeCard = ({ name, role, description, imageSrc }: IEmployeeCard) => {
+const EmployeeCard = ({ name, role, description, imageSrc, shortBio }: IEmployeeCard) => {
   const [openCard, setOpenCard] = React.useState(false);
 
   return (
@@ -17,6 +18,7 @@ const EmployeeCard = ({ name, role, description, imageSrc }: IEmployeeCard) => {
 
       <h3>{name}</h3>
       <span className={styles.role}>{role}</span>
+      <span className={styles.shortBio}>{shortBio}</span>
       <img src={imageSrc} alt={name} width={240} height={240} loading="lazy" />
 
       {openCard && (
