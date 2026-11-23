@@ -3,6 +3,15 @@
   background-repeat: no-repeat;
   background-position: 100%;
   background-size: contain;
+  margin-top: 106px;
+
+  @media (max-width: 1370px) {
+    margin-top: 80px;
+  }
+
+  @media (max-width: 30rem) {
+    margin-top: 60px;
+  }
 }
 
 .bgContainer > div {
