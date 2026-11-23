@@ -1,6 +1,7 @@
 .container {
   gap: 2rem;
   opacity: 1;
+  align-items: flex-start;
 
   @media (max-width: 1370px) {
     flex-direction: column;

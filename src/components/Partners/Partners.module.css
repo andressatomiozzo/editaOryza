@@ -75,8 +75,10 @@
 
 .liContent img {
   max-width: 120%;
+  padding: 1rem;
 
   @media (max-width: 700px) {
+    padding: 0rem;
     max-width: 100%;
     max-height: 100%;
     width: auto;
