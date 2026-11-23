@@ -94,6 +94,7 @@ html {
   scroll-padding-top: 140px;
   scrollbar-width: thin;
   scrollbar-color: var(--color-highlight2) var(--color-neutral1);
+  overflow-x: hidden;
   @media (max-width: 1370px) {
     scroll-padding-top: 110px;
   }
@@ -105,7 +106,7 @@ html {
 body {
   background-color: var(--color-neutral2);
   font-family: var(--ff-century-gothic);
-  overflow-x: clip;
+  overflow-x: hidden;
   touch-action: pan-y;
 }
 
